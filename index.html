@@ -43,6 +43,25 @@
     <h1><em>br</em>  tag</h1>
         <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. [after the word "now" there is s br tag]</p>
 
+    <h1>(html) Entity</h1>
+    <h2>Entities are special symbols:</h2>
+            
+    <p>"An HTML <strong>entity</strong>  is used to display <strong>invisible characters</strong>   and <strong>reserved characters</strong>  that would otherwise be interpreted as HTML code.</p>
+    <p>It is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
+    <p> HTML will interpret the less-than sign ( &lt; ) as a tag". (https://www.educative.io/edpresso/what-are-html-entities).</p>
+
+    <p>Here we have some symbols written this way:</p>
+    <ul>
+        <li>&reg;</li>
+        <li>&copy;</li>
+        <li>&trade;</li>
+        <li>&yen;</li>
+        <li>&phone;</li>
+        <li>&female;</li>
+        <li>&spades;</li>
+        <li>&numero;</li>
+    </ul>
+
     <h1><em>& lt;</em> entity*:</h1>
         <p>When I type the 3 characters above together (without the space I put there just to make it visible here) they make this symbol: &lt;</p>
         <p><strong>lt</strong>  means <q>LESS THAN.</q></p>
@@ -53,25 +72,9 @@
         <p><strong>gt</strong>  means <q>GREATER THAN.</q></p>
         <P>Always with a semicolon at the end.</P>
 
-    <h1>Special symbols:</h1>
-            <p>* What's an <strong>ENTITY?</strong> </p>
-            <p>"An HTML <strong>entity</strong>  is used to display <strong>invisible characters</strong>   and <strong>reserved characters</strong>  that would otherwise be interpreted as HTML code.</p>
-            <p>It is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
-            <p> HTML will interpret the less-than sign ( < ) as a tag". (https://www.educative.io/edpresso/what-are-html-entities).</p>
+        <p><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities.</a></p>
 
-            <p>Here we have some symbols written this way:</p>
-            <ul>
-                <li>&reg;</li>
-                <li>&copy;</li>
-                <li>&trade;</li>
-                <li>&yen;</li>
-                <li>&phone;</li>
-                <li>&female;</li>
-                <li>&spades;</li>
-                <li>&numero;</li>
-            </ul>
 
-            <p><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities.</a></p>
 
             <h2 style="color: rgb(252, 109, 57);">Some art for a coffee-break.</h2>
             <hr>
@@ -122,10 +125,11 @@
 
     <h2>2) Straight from another website:</h2>
 
-        <p>Copying an image address from another website is an alternative way of adding an image to your page.</p>
+        <p>Copying an image <strong>address</strong>   from another website is an alternative way of adding an image to your page.</p>
+        <p>The disadvantage is that the image in your page will always depend on the existence of the original one and more: it must be exactly where it was when you copied the eddress. If their website crashes, your linked image crashes. If they change anything in the addres, the link is gone and so does the image.</p>
         <p>Just right click any image of any website and choose "copy image address" (or whatever is closer to that). Then, paste it between the first quotation marks (src="") of the "img" tag.</p>
         <p>Again: The second quotation marks (alt="") of the "img" tag are for you to write a quick description of the picture. It serves to appear in the screen in case the image doesn't load for any reason AND to be read out loud for those who wish the browser to do that.</p>
-        <p>This is an example:</p>
+        <p>This is an example (linked from G1.com):</p>
         <img src="https://s2.glbimg.com/DHCxxKd2oxxJwWNSGcbtwhTDapA=/0x0:1200x5562/640x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/8/c/wBz1OySaygj4v3cLRJTw/0102-cadeira-escritorio-ergonomia.jpg" alt="Imagem do G1" width="300">
 
     <h1>Types of images</h1>
@@ -135,7 +139,7 @@
         <hr>
 
         <p>JPG (or JPEG) Is better if you want a big image with less weight, like this one:</p>
-        <img src="images/landscape.jpg" alt="">
+        <img src="images/landscape.jpg" alt="swimming pool near the ocean landdscape">
         
     <hr>
 
@@ -181,6 +185,9 @@
 
         <p>"The SVG format has benefits over the PNG and ICO formats, but doesn't have great browser support yet. SVG files (Scalable Vector Graphics) are very lightweight and, being a "vector" graphic, they are infinitely scalable. This means that image quality is superb without sacrificing load times for heavy images. Only Chrome, Firefox, and Opera support SVG format favicons". <a href="https://favicon.io/tutorials/what-is-a-favicon/">Favicon.io</a></p>
 
+    <h2>How to add a favicon to the page/site:</h2>
+
+        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon </code>. Delete whatever comes written in the "href" quotation marks and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course). And don't change anytinng else in this code line given by Emmet.</p>
     
 
     
