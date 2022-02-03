@@ -22,7 +22,11 @@
         .ball {
             background-color: cornflowerblue;
             padding: 45px;
+            margin-left: 0px;
+            margin-right: 200px;
+            float: inline-start;
         }
+        
     </style>
 
 </head>
@@ -139,19 +143,24 @@
         <hr>
 
         <p>JPG (or JPEG) Is better if you want a big image with less weight, like this one:</p>
-        <img src="images/landscape.jpg" alt="swimming pool near the ocean landdscape">
-        
+        <div class="pic">
+        <img src="images/landscape.jpg" alt="swimming pool near the ocean landdscape" width="1200px">
+        </div>
     <hr>
 
         <div class="ball">
 
-        <p style="font-size:x-large;">PNG images are better if you want them to have a transparent background, like this one:</p>
+        <p style="font-size:x-large;">PNG images are better if you want the picture to have a transparent background (no picture frame, too), like these ones:</p>
 
-        <img src="images/baloon.png" alt="baloons">
+        <img src="images/baloon.png" alt="baloons" width="400px">
+        <img src="images/hand.png" alt="hand" width="300px" >
+        <img src="images/baloon.png" alt="baloons" width="200px">
 
         <p style="font-size:x-large;">The page's blue background makes it easier to check the image's transparency.</p>
 
         </div>
+        <hr>
+        <img src="images/baloon.png" alt="baloons" width="200px">
 
     <hr>
 
@@ -187,7 +196,7 @@
 
     <h2>How to add a favicon to the page/site:</h2>
 
-        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon </code>. Delete whatever comes written in the "href" quotation marks and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course). And don't change anytinng else in this code line given by Emmet.</p>
+        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon </code>. <span style="color: chartreuse; background-color: black;">Delete whatever comes written in the "href" quotation marks</span>  and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course). And <span style="color: rgb(255, 238, 0); background-color: black;">don't change anytinng else</span>  in this code line given by Emmet. (Those colors are some "span" + "style" testing).</p>
     
 
     
