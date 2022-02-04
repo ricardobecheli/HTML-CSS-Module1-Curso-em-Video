@@ -1,5 +1,24 @@
 
-/* Style. css remains empty until Feb/3/2022.*/
+body {
+    margin-bottom: 250px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+code {
+    background-color: black;
+    color: chartreuse;
+    padding: 2px;
+}
+
+hr {
+    border: 1px solid red;
+}
+
+li {
+    margin-bottom: 7px;
+}
 
 .comment {
     background-color: rgb(217, 174, 248);

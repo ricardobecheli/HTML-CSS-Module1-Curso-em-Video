@@ -8,26 +8,7 @@
     <title>HTML+CSS M1</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            margin-bottom: 250px;
-            margin-left: 150px;
-            margin-right: 150px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        code {
-            background-color: black;
-            color: chartreuse;
-            padding: 2px;
-        }
-
-        hr {
-            border: 1px solid red;
-        }
-
-        li {
-            margin-bottom: 7px;
-        }
+        
         .ball {
             background-color: cornflowerblue;
             padding: 45px;
@@ -52,7 +33,7 @@
     <h1><em>hr</em>  tag</h1>
         <p>The <code> &lt;hr&gt;</code>* tag (hr stands for "horizontal rule". It makes an HORIZONTAL LINE). The the <span style="color: red;">red line</span> above here. It's originally black but I applied some <span style="color: blue;">style</span>  to it in the <span style="color: blue;">head</span> area of the HTML basic structure (but here, in this paragraph, it was in the middle of the paragraph (called "<span style="color: blue;">in line</span> style"*), using <code>&lt;span&gt;</code> 3 times).</p>
 
-        <div class="comment">
+<div class="comment">
     <h3>
         Some CSS is needed from the very beginning to avoid visual chaos <br> with so many information within the same page.
     </h3>
@@ -67,14 +48,14 @@
 
         <p>This purple area here was implemented by the <span style="color: blue; background-color: white;">"EXTERNAL"</span> way. But the effect in this word back here was done <span style="color: blue; background-color: white;">"INLINE"</span>.</p>
 
-        </div>
+</div>
 
         <p>The hr characters in the begining of the above paragraph are between the <code>&lt;code&gt;</code>  tags, which turns the fonts into "monospaced". That's the tag used by html to display code.)</p>
 
     <h1><em>br</em>  tag</h1>
         <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. [after the word "now" there is a <code>&lt;br&gt;</code> tag]</p>
 
-    <h1>(html) Entity</h1>
+    <h1>Entities</h1>
     <h2>Entities are special symbols:</h2>
             
         <p>"An HTML <strong>entity</strong>  is used to display <strong>invisible characters</strong>   and <strong>reserved characters</strong>  that would otherwise be interpreted as HTML code.</p>
@@ -93,24 +74,24 @@
         <li>&numero;</li>
     </ul>
 
-    <h1><em>& lt;</em> entity*:</h1>
+    <h2><code>& lt;</code> entity* = <span style="color: blue;">&lt;</span></h2>
         <p>When I type the 3 characters above together (without the space I put there just to make it visible here) they make this symbol: &lt;</p>
         <p><strong>lt</strong>  means <q>LESS THAN.</q></p>
         <P>Always with a semicolon at the end.</P>
 
-    <h1><em>& gt;</em> entity*:</h1>
+    <h2><code>& gt;</code> entity* = <span style="color: blue;">&gt;</span> </h2>
         <p>When I type the 3 characters above together (<strong>without</strong>  the space I put there just to make it visible here) they make this symbol: &gt;</p> <!-- Comentário é assim, lembra? Abre tag, exclamação, dois traços. -->
         <p><strong>gt</strong>  means <q>GREATER THAN.</q></p>
         <P>Always with a semicolon at the end.</P>
 
-        <p><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities.</a></p>
+        <p><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities, which will open in a new tab.</a></p>
 
 
 
-            <h2 style="color: rgb(252, 109, 57);">Some art for a coffee-break.</h2>
+            <h2 style="color: rgb(252, 109, 57); margin-top: 100px;">Some art for a coffee-break.</h2>
             <hr>
             <img src="images/flyrrari.jpg" alt="Flyrrari">
-            <hr>
+            <hr style="margin-bottom: 100px;">
             
     <h1>Emojis:</h1>
         <p>Emojis codes are a little more complicated to insert.</p>
@@ -201,9 +182,9 @@
 
         <p>Examples of favicon:</p>
         <hr>
-        <img src="images/example01-favicon.jpg" alt="Example of favicon-01" width= "500px">
+        <img src="images/example01-favicon.jpg" alt="Example of favicon-01" width="25%">
         <hr>
-        <img src="images/example02-favicon.jpg" alt="Example of favicon-02">
+        <img src="images/example02-favicon.jpg" alt="Example of favicon-02" width="25%">
         <hr>
 
 
@@ -223,18 +204,16 @@
 
     <h2>How to add a favicon to the page/site:</h2>
 
-        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon </code>.</p>
+        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon</code>.</p>
 
             <p>
                 <span style="color: yellow; background-color: gray;">
-                Delete whatever comes written in the "href" quotation marks
-                </span>  and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course).
+                Delete whatever comes written in the "href" quotation marks</span> and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course).
             </p>
 
             <p>
                And 
-                <span style="color: yellow; background-color: gray;">don't change anytinng else
-                </span>  in this code line given by Emmet. (Those colors here are some "span" + "style" testing.) 
+                <span style="color: yellow; background-color: gray;">don't change anytinng else</span>  in this code line given by Emmet. (Those colors here are some "span" + "style" testing.) 
             </p>
             
              
