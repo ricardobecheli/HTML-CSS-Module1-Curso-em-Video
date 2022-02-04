@@ -6,6 +6,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    margin-left: 50px;
+}
+
 code {
     background-color: black;
     color: chartreuse;
@@ -18,11 +22,16 @@ hr {
 
 li {
     margin-bottom: 7px;
+    margin-left: 30px;
 }
 
 .comment {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: rgb(217, 174, 248);
-    color: rgb(35, 122, 1);
+    color: rgb(30, 107, 0);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;

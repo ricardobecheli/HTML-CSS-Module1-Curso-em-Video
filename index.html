@@ -8,7 +8,7 @@
     <title>HTML+CSS M1</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+
         .ball {
             background-color: cornflowerblue;
             padding: 45px;
@@ -29,26 +29,28 @@
         <p>I'll be using the <code>&lt;strong&gt;</code>  tag to make bold text and the <code>&lt;em&gt;</code>  tag to make italic before the first lessons mention them. The same goes to the <code>&lt;a&gt;</code>  tag to make links.</p>
 
     <hr>
+    <div class="comment">
+        <h3>
+            Some CSS is needed from the very beginning to avoid visual chaos <br> with so many information within the same page.
+        </h3>
+    
+            <p>* There are three ways you can use to implement CSS into your HTML (CSS lessons with details will come later in this course):</p>
+    
+                <ol>
+                    <li><span style="color: blue;">"INTERNAL"</span>: When it's added in the "head" section of your document;</li>
+                    <li><span style="color: blue;">"INLINE"</span>: Applyed to a specific HTLM element in a lilne/paragraph; </li>
+                    <li><span style="color: blue;">"EXTERNAL"</span>: All the CSS lies on a separate document in your project, properly linked to the HTML document.</li>
+                </ol>
+    
+            <p>This purple area here was implemented by the <span style="color: blue; background-color: white;">"EXTERNAL"</span> way. But the effect in this word back here was done <span style="color: blue; background-color: white;">"INLINE"</span>.</p>
+    
+    </div>
+
+    <hr>
 
     <h1><em>hr</em>  tag</h1>
         <p>The <code> &lt;hr&gt;</code>* tag (hr stands for "horizontal rule". It makes an HORIZONTAL LINE). The the <span style="color: red;">red line</span> above here. It's originally black but I applied some <span style="color: blue;">style</span>  to it in the <span style="color: blue;">head</span> area of the HTML basic structure (but here, in this paragraph, it was in the middle of the paragraph (called "<span style="color: blue;">in line</span> style"*), using <code>&lt;span&gt;</code> 3 times).</p>
 
-<div class="comment">
-    <h3>
-        Some CSS is needed from the very beginning to avoid visual chaos <br> with so many information within the same page.
-    </h3>
-
-        <p>* There are three ways you can use to implement CSS into your HTML (CSS lessons with details will come later in this course):</p>
-
-            <ol>
-                <li><span style="color: blue;">"INTERNAL"</span>: When it's added in the "head" section of your document;</li>
-                <li><span style="color: blue;">"INLINE"</span>: Applyed to a specific HTLM element in a lilne/paragraph; </li>
-                <li><span style="color: blue;">"EXTERNAL"</span>: All the CSS lies on a separate document in your project, properly linked to the HTML document.</li>
-            </ol>
-
-        <p>This purple area here was implemented by the <span style="color: blue; background-color: white;">"EXTERNAL"</span> way. But the effect in this word back here was done <span style="color: blue; background-color: white;">"INLINE"</span>.</p>
-
-</div>
 
         <p>The hr characters in the begining of the above paragraph are between the <code>&lt;code&gt;</code>  tags, which turns the fonts into "monospaced". That's the tag used by html to display code.)</p>
 
@@ -56,23 +58,13 @@
         <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. [after the word "now" there is a <code>&lt;br&gt;</code> tag]</p>
 
     <h1>Entities</h1>
-    <h2>Entities are special symbols:</h2>
+    <h3>Entities are used to return / display special symbols.</h3>
             
         <p>"An HTML <strong>entity</strong>  is used to display <strong>invisible characters</strong>   and <strong>reserved characters</strong>  that would otherwise be interpreted as HTML code.</p>
-        <p>It is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
-        <p> HTML will interpret the less-than sign ( &lt; ) as a tag". (https://www.educative.io/edpresso/what-are-html-entities).</p>
+        
+        <p> <span style="color: yellow; background-color: gray;">An HTML entity is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).</span></p>
 
-        <p>Here we have some symbols written this way:</p>
-    <ul>
-        <li>&reg;</li>
-        <li>&copy;</li>
-        <li>&trade;</li>
-        <li>&yen;</li>
-        <li>&phone;</li>
-        <li>&female;</li>
-        <li>&spades;</li>
-        <li>&numero;</li>
-    </ul>
+        <p>For instance, HTML will interpret the less-than sign ( &lt; ) as a tag opening if you don't write it as an entity.</p>
 
     <h2><code>& lt;</code> entity* = <span style="color: blue;">&lt;</span></h2>
         <p>When I type the 3 characters above together (without the space I put there just to make it visible here) they make this symbol: &lt;</p>
@@ -84,7 +76,20 @@
         <p><strong>gt</strong>  means <q>GREATER THAN.</q></p>
         <P>Always with a semicolon at the end.</P>
 
-        <p><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities, which will open in a new tab.</a></p>
+
+    <h3>Here we have some symbols written this way:</h3>
+    <ul>
+        <li>&reg;</li>
+        <li>&copy;</li>
+        <li>&trade;</li>
+        <li>&yen;</li>
+        <li>&phone;</li>
+        <li>&female;</li>
+        <li>&spades;</li>
+        <li>&numero;</li>
+    </ul>
+
+    <h3><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities (more than 1,500), which will open in a new tab.</a></h3>
 
 
 
@@ -164,15 +169,16 @@
         <img src="images/hand.png" alt="hand" width="300px" >
         <img src="images/baloon.png" alt="baloons" width="200px">
 
-        <p style="font-size:x-large;">The page's blue background makes it easier to check the image's transparency.</p>
+        <p style="font-size:x-large;">I implemented a blue background (in a "div" "class" called "ball") to make it easier to check the image's transparency.</p>
 
         </div>
         <hr>
         <img src="images/baloon.png" alt="baloons" width="200px">
 
-    <hr>
+        <p>If you want to optimize the image, please use GIMP freeware (the "free photoshop") to "save to web" and automatically reduce a lot of the image's weight without loosing much quality.</p>
 
-        <p>And use GIMP freeware (the "free photoshop") to "save to web" and automatically reduce a lot of the image's weight without loosing much quality.</p>
+    <hr style="margin-bottom: 80px;">
+     
 
     <h1>Favicon</h1>
 
