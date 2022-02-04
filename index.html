@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon-html-css.png" type="image/x-icon">
     <title>HTML+CSS M1</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin-bottom: 250px;
-            margin-left: 90px;
-            margin-right: 90px;
+            margin-left: 150px;
+            margin-right: 150px;
+            font-family: Arial, Helvetica, sans-serif;
         }
+
+        code {
+            background-color: black;
+            color: chartreuse;
+            padding: 2px;
+        }
+
         hr {
             border: 1px solid red;
         }
@@ -33,28 +42,46 @@
 
 <body>
     <h1>Hello, world!</h1>
-        <p>This is my first HTML document in this course.</p>
-        <p>This is an unique moment. I'm creating a wewbsite (don't blame me. It's the teacher's text).</p>
-        <p>I'll be using the &lt;strong&gt; tag to make bold text and the &lt;em&gt; tag to make italic before the first lessons mention them. The same goes to the &lt;a&gt; tag to make links.</p>
-        <p><em>Ricardo Barros Becheli, January 31, 2022.</em></p>
+        <p>This is my first HTML document in this course. <em>Ricardo Barros Becheli, January 31, 2022.</em></p>
+        <h4>Curso em Vídeo channel - YouTube - Teacher: Gustavo Guanabara</h4>
+
+        <p>I'll be using the <code>&lt;strong&gt;</code>  tag to make bold text and the <code>&lt;em&gt;</code>  tag to make italic before the first lessons mention them. The same goes to the <code>&lt;a&gt;</code>  tag to make links.</p>
+
     <hr>
 
     <h1><em>hr</em>  tag</h1>
-        <p>The <code> hr </code>* tag makes the line above. It's originally black but I applied some <span style="color: red;">style</span>  to it in the head area (but here it was in the middle of the paragraph, using span).<br>
-        (the hr characters in the begining of the above paragraph are between the "code" tags, which turns the fonts into monospaced. That's the tag used by html to display code.)</p>
-        <p>* hr stands for "horizontal rule". It makes an HORIZONTAL LINE.</p>
+        <p>The <code> &lt;hr&gt;</code>* tag (hr stands for "horizontal rule". It makes an HORIZONTAL LINE). The the <span style="color: red;">red line</span> above here. It's originally black but I applied some <span style="color: blue;">style</span>  to it in the <span style="color: blue;">head</span> area of the HTML basic structure (but here, in this paragraph, it was in the middle of the paragraph (called "<span style="color: blue;">in line</span> style"*), using <code>&lt;span&gt;</code> 3 times).</p>
+
+        <div class="comment">
+    <h3>
+        Some CSS is needed from the very beginning to avoid visual chaos <br> with so many information within the same page.
+    </h3>
+
+        <p>* There are three ways you can use to implement CSS into your HTML (CSS lessons with details will come later in this course):</p>
+
+            <ol>
+                <li><span style="color: blue;">"INTERNAL"</span>: When it's added in the "head" section of your document;</li>
+                <li><span style="color: blue;">"INLINE"</span>: Applyed to a specific HTLM element in a lilne/paragraph; </li>
+                <li><span style="color: blue;">"EXTERNAL"</span>: All the CSS lies on a separate document in your project, properly linked to the HTML document.</li>
+            </ol>
+
+        <p>This purple area here was implemented by the <span style="color: blue; background-color: white;">"EXTERNAL"</span> way. But the effect in this word back here was done <span style="color: blue; background-color: white;">"INLINE"</span>.</p>
+
+        </div>
+
+        <p>The hr characters in the begining of the above paragraph are between the <code>&lt;code&gt;</code>  tags, which turns the fonts into "monospaced". That's the tag used by html to display code.)</p>
 
     <h1><em>br</em>  tag</h1>
-        <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. [after the word "now" there is s br tag]</p>
+        <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. [after the word "now" there is a <code>&lt;br&gt;</code> tag]</p>
 
     <h1>(html) Entity</h1>
     <h2>Entities are special symbols:</h2>
             
-    <p>"An HTML <strong>entity</strong>  is used to display <strong>invisible characters</strong>   and <strong>reserved characters</strong>  that would otherwise be interpreted as HTML code.</p>
-    <p>It is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
-    <p> HTML will interpret the less-than sign ( &lt; ) as a tag". (https://www.educative.io/edpresso/what-are-html-entities).</p>
+        <p>"An HTML <strong>entity</strong>  is used to display <strong>invisible characters</strong>   and <strong>reserved characters</strong>  that would otherwise be interpreted as HTML code.</p>
+        <p>It is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
+        <p> HTML will interpret the less-than sign ( &lt; ) as a tag". (https://www.educative.io/edpresso/what-are-html-entities).</p>
 
-    <p>Here we have some symbols written this way:</p>
+        <p>Here we have some symbols written this way:</p>
     <ul>
         <li>&reg;</li>
         <li>&copy;</li>
@@ -117,9 +144,9 @@
         <p>This image is from Pixnio. Very easy. You don't even have to register in their website. And you have size options. I chose a personalized one with 200px height.</p>
         <img src="images/PIXNIO-2761210-267x200.jpg" alt="Pixnio image.">
 
-    <h1>How to add images to your page</h1>
+    <h2>How to add images to your page</h2>
 
-    <h2>1) From a folder of yours:</h2>
+    <h3>1) From a folder of yours:</h3>
 
         <p>First, download the image to your "images" folder within your HTML project.</p>
         <p>(If you're a beginner like me, going through Visual Studio Code tutorials is not a bad idea)</p>
@@ -127,7 +154,7 @@
         <p>The second quotation marks (alt="") of the "img" tag are for you to write a quick description of the picture. It serves to appear in the screen in case the image doesn't load for any reason AND to be read out loud for those who wish the browser to do that.</p>
         
 
-    <h2>2) Straight from another website:</h2>
+    <h3>2) Straight from another website:</h3>
 
         <p>Copying an image <strong>address</strong>   from another website is an alternative way of adding an image to your page.</p>
         <p>The disadvantage is that the image in your page will always depend on the existence of the original one and more: it must be exactly where it was when you copied the eddress. If their website crashes, your linked image crashes. If they change anything in the addres, the link is gone and so does the image.</p>
@@ -136,7 +163,7 @@
         <p>This is an example (linked from G1.com):</p>
         <img src="https://s2.glbimg.com/DHCxxKd2oxxJwWNSGcbtwhTDapA=/0x0:1200x5562/640x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/8/c/wBz1OySaygj4v3cLRJTw/0102-cadeira-escritorio-ergonomia.jpg" alt="Imagem do G1" width="300">
 
-    <h1>Types of images</h1>
+    <h2>Types of images</h2>
 
         <p>In a few words:</p>
 
@@ -196,7 +223,21 @@
 
     <h2>How to add a favicon to the page/site:</h2>
 
-        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon </code>. <span style="color: chartreuse; background-color: black;">Delete whatever comes written in the "href" quotation marks</span>  and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course). And <span style="color: rgb(255, 238, 0); background-color: black;">don't change anytinng else</span>  in this code line given by Emmet. (Those colors are some "span" + "style" testing).</p>
+        <p>In the head area of the HTML code you type <code>link</code>. One of the Emmet Abbreviations the assistant will suggest says <code>link : favicon </code>.</p>
+
+            <p>
+                <span style="color: yellow; background-color: gray;">
+                Delete whatever comes written in the "href" quotation marks
+                </span>  and press ctrl+enter to choose your own favicon image from your project's folder (all this in the Visual Studio Code, of course).
+            </p>
+
+            <p>
+               And 
+                <span style="color: yellow; background-color: gray;">don't change anytinng else
+                </span>  in this code line given by Emmet. (Those colors here are some "span" + "style" testing.) 
+            </p>
+            
+             
     
 
     

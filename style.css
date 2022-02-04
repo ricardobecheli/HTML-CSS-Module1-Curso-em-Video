@@ -1,2 +1,11 @@
 
 /* Style. css remains empty until Feb/3/2022.*/
+
+.comment {
+    background-color: rgb(217, 174, 248);
+    color: rgb(35, 122, 1);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
