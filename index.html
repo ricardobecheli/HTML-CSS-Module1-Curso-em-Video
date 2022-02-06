@@ -9,13 +9,37 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
-        .ball {
+        .blue {
+            height: 350px;
             background-color: cornflowerblue;
             padding: 45px;
             margin-left: 0px;
-            margin-right: 200px;
+            margin-right: 0px;
             float: inline-start;
         }
+
+        .balls-hand {
+            background-color: cornflowerblue;
+        }
+
+        .balls-hand {
+            margin: 5px;
+            
+            float: left;
+            width: 200px;
+        }
+
+        .balls-hand:hover {
+  border: 1px solid #777;
+}
+
+.balls-hand img {
+  width: 100%;
+  height: auto;
+}
+
+
+
         
     </style>
 
@@ -159,22 +183,34 @@
         <hr>
 
         <p>JPG (or JPEG) Is better if you want a big image with less weight, like this one:</p>
+
+
         <div class="pic">
         <img src="images/landscape.jpg" alt="swimming pool near the ocean landdscape" width="1200px">
         </div>
     <hr>
 
-        <div class="ball">
+    <div class="blue">
 
         <p style="font-size:x-large;">PNG images are better if you want the picture itself to have a transparent background (and no picture frame), like these ones:</p>
 
-        <img src="images/baloon.png" alt="baloons" width="400px">
-        <img src="images/hand.png" alt="hand" width="300px" >
-        <img src="images/baloon.png" alt="baloons" width="200px">
+            <div class="balls-hand">
+                <img src="images/baloon.png" alt="baloons" width="400px">
+            </div>
 
-        <p style="font-size:x-large;">I've implemented a blue background (in a "div" "class" called "ball" in the head sector herein) to make it easier to check the image's transparency.</p>
+            <div class="balls-hand">
+                <img src="images/hand.png" alt="hand" width="300px" >
+            </div>
 
-        </div>
+            <div class="balls-hand">           
+                <img src="images/spiderman.png" alt="baloons" width="200px">
+            </div>
+
+        <p style="font-size:x-large;">I've implemented a blue background (in a "div" "class" called "balls-hand" inside another div class called "blue" in the head sector of this HTML document) to make it easier to check the image's transparency. Images from <a href="https://www.pngwing.com/en/search?q=free+download">pngwing.com</a> .</p>
+
+    </div>
+
+
         <hr>
         <img src="images/baloon.png" alt="baloons" width="200px">
 
