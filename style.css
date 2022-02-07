@@ -48,7 +48,9 @@ li {
 .obs {
     background-color: rgb(99, 99, 99);
     color: white;
-    padding: 4px;
+    padding: 15px;
+    padding-right: 50px;
+    padding-left: 0px;
     margin-left: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
