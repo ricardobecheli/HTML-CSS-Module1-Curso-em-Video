@@ -30,6 +30,7 @@ li {
 }
 
 .comment {
+    box-shadow: 3px 3px 30px 10px rgba(0, 139, 139, 0.788) inset;
     text-align: justify;
     margin-left: 15%;
     margin-right: 15%;
@@ -46,8 +47,9 @@ li {
 }
 
 .obs {
-    background-color: rgb(99, 99, 99);
-    color: white;
+    box-shadow: 3px 3px 30px 10px rgba(217, 174, 248, 0.747) inset;
+    background-color: rgba(88, 72, 90, 0.562);
+    color: rgb(91, 6, 250);
     padding: 15px;
     padding-right: 50px;
     padding-left: 0px;
