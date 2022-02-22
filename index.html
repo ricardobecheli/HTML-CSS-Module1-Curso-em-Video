@@ -404,15 +404,121 @@
             <p>To put any lenght of text (from a single letter to a group of paragraphs) inside a tag:</p>
             <p>Just press <em>Ctrl + shift + p</em> then find "wrap with abbreviation", select it with <em>enter</em> and type only the letters that represent the tag you want. Only the letters, without the &lt; and &GT; signs. And <em>enter</em> to finalize. Ready! It's wrapped. The next times you do that, just press ctrl+shift+p and the option will already be there in the recent history and you proceed with the rest of the instructions above. </p>
 
-<h1><mark>Mark</mark> the text</h1>
+<h1>
+    <mark>Mark</mark> the text
+</h1>
 
-<p>The <code>&ltmark&gt;</code> tag makes the text return to its original color, black.</p>
-<p>If you want it to continue the green CSS style I have defined for all <code>&lt;h1&gt;</code> tags you have to force it by applying an INLINE CSS in the <code>&ltmark&gt;</code> tag opening as follows:</p>
-<h1><mark style="color:darkgreen;">Mark</mark> the text</h1>
+<p>The <code>&ltmark&gt;</code> tag makes the above <code>&lt;h1&gt;</code> heading (which I had "styled" to green) return to its original color, black.</p>
+<p>If you want it to continue the green CSS style I have defined for all <code>&lt;h1&gt;</code> tags you have to force it by applying an INLINE CSS to the <code>&ltmark&gt;</code> tag opening as follows:</p>
+
+<h1 style="margin-left: 200px;">
+    <mark style="color:darkgreen;">Mark</mark> the text
+</h1>
+
 <p>And if the yellow mark doesn't match your overall background-color, just do the same as above adding a background-color to the mark's opening tag style. See:</p>
-<h1><mark style="color:darkgreen; background-color: lime;">Mark</mark> the text</h1>
+
+<h1 style="margin-left: 200px;">
+    <mark style="color:darkgreen; background-color: lime;">Mark</mark> the text
+</h1>
+
 <p>Mark the text. Don't mark bobeira!</p>
 
+<h1>
+    HOW TO DISPLAY CODE
+</h1>
+
+<h2>
+    The <code>&lt;code&gt;</code> tag:
+</h2>
+
+<p>
+    If you just put a JS code snippet into a <code>&lt;code&gt;</code> tag like that:
+</p>
+
+<p>
+    
+    <code>
+        matches.forEach(function(match) {
+            match.parentNode.removeChild(match);
+          });
+    </code>
+</p>
+
+<p>
+    It's just rendered as monospaced font (and - in this particular case - plus the black and green CSS I applied to all the code tags). No line separations, no indentation.
+</p>
+
+<p>So if you really want it to be displayed like the real code in the editor you must apply the <code>&lt;pre&gt;</code> tag, as follows:</p>
+
+<p>
+    <pre>
+        matches.forEach(function(match) {
+            match.parentNode.removeChild(match);
+          });
+    </pre>
+</p>
+
+<p>The above is the code as it was written.</p>
+
+<h2>More important information about that from my Rocketseat course page:</h2>
+
+<h1>
+    DISPLAYING CODE
+</h1>
+</div>
+
+<div class="displaycode">
+<h2>&lt;pre&gt; THE <em>PREFORMATED TEXT</em> ELEMENT</h2>
+
+<figure>
+    <blockquote>
+        <p>The HTML element represents preformatted text which is to be presented exactly(*!!!) as written in the HTML file. The text is typically rendered using a non-proportional, or <a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank">monospaced</a>, font. Whitespace inside this element is displayed as written. <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">MDN Web Docs</a></cite></p>
+    </blockquote>
+</figure>
+
+<p>*!!! - It's not quite like that, as the very site continues:</p>
+
+<p><q>If you have to display reserved characters such as <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> and <code>"</code> within the &lt;pre&gt; tag, the characters must be <strong style="color: black;">escaped</strong> using their respective <strong style="color: black;">HTML entity</strong>.</q></p>
+
+<p>IN OTHER WORDS, YOU MUST CANCELL THE HTML "CODE EFFECT" OF THOSE SYMBOLS (when displaying code).</p>
+
+<h2 style="color: black;">What are HTML entities?</h2>
+
+<p>Entities are used to return / display special symbols.</p>
+    
+<p>"An HTML entity  is used to display invisible and reserved characters that would otherwise be interpreted as HTML code.</p>
+
+<p> <span style="color: black; background-color: gray;">An HTML entity is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).</span></p>
+
+<p>For instance, HTML will interpret the <q>less-than</q> sign ( &lt; ) as a tag opening if you don't write it as an entity.</p>
+
+<h2><code>& lt;</code> entity = <span style="color: blue;">&lt;</span></h2>
+<p>When I type the 3 characters above together (without the space I put there just to make it visible here) they make this symbol: &lt;</p>
+<p><strong>lt</strong>  means <q>LESS THAN.</q></p>
+<P>Always with a semicolon at the end.</P>
+
+<h2><code>& gt;</code> entity = <span style="color: blue;">&gt;</span> </h2>
+<p>When I type the 3 characters above together (<strong>without</strong>  the space I put there just to make it visible here) they make this symbol: &gt;</p> <!-- Comentário é assim, lembra? Abre tag, exclamação, dois traços. -->
+<p><strong>gt</strong>  means <q>GREATER THAN.</q></p>
+<P>Always with a semicolon at the end.</P>
+
+
+<h3>Here we have some symbols written this way:</h3>
+<ul>
+<li>&reg;</li>
+<li>&copy;</li>
+<li>&trade;</li>
+<li>&yen;</li>
+<li>&phone;</li>
+<li>&female;</li>
+<li>&spades;</li>
+<li>&numero;</li>
+</ul>
+
+<h3><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities (more than 1,500), which will open in a new tab.</a></h3>
+
+
+<h1>To be continued...</h1>
 
 
 
