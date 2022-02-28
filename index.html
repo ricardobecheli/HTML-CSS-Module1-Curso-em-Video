@@ -244,7 +244,7 @@
         <p>The <code> &lt;hr&gt;</code>* tag (hr stands for "horizontal rule". It makes an HORIZONTAL LINE). The the <span style="color: red;">red line</span> above here. It's originally black but I applied some <span style="color: blue;">style (=CSS)</span>  to it in the <span style="color: blue;">head</span> area of the HTML basic structure (but here, in this paragraph, the colors/style were modified in the middle of the paragraph (the so called "<span style="color: blue;">inline CSS</span>" explained above.), using <code>&lt;span&gt;</code> 3 times).</p>
 
 
-        <p>The hr characters in the begining of the above paragraph are between the <code>&lt;code&gt;</code>  tags, which turns the fonts into <mark>"monospaced"</mark>. That's the tag used by html to display code.)</p>
+
 
 <h1><em>br</em>  tag</h1>
         <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. (after the word "now" there is a <code>&lt;br&gt;</code> tag)</p>
@@ -492,18 +492,28 @@
     The <code>&lt;code&gt;</code> tag:
 </h2>
 
-        <p>
-    If you just put a JS code snippet into a <code>&lt;code&gt;</code> tag like that:
-</p>
+            <p>The code tag above is between the <code>&lt;code&gt;</code> tags, which turns the fonts into <mark>"monospaced"</mark>. The <code>black background and the green font color</code> are CSS styles I have added. The same happens with the open and close tag symbols, which I added through the "HTML entities" we will see in the next topic.
+            </p>
 
-        <p>
-    
+            <p>
+                <q>A monospaced font, also called a fixed-pitch, fixed-width, or non-proportional font, is a font whose letters and characters each occupy the same amount of horizontal space. This contrasts with variable-width fonts, where the letters and spacings have different widths. Check the comparison below.<a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer">Wikipedia</a></q>.
+            </p>
+
+            <figure>
+                <img src="images/Proportional-vs-monospace-v5.svg.png" alt="proportional versus monospaced image comparison." style="margin-bottom: 50px;">
+            </figure>
+
+            <p>
+            If you just put a JS code snippet into a <code>&lt;code&gt;</code> tag like the example below, it does not replicate the line breaks and the identing:
+            </p>
+
+            <p>
     <code>
         matches.forEach(function(match) {
             match.parentNode.removeChild(match);
           });
     </code>
-</p>
+            </p>
 
             <p>
     It's just rendered as monospaced font (and - in this particular case - plus the black and green CSS I applied to all the code tags). No line separations, no indentation.
