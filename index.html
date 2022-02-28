@@ -523,48 +523,48 @@
     The <code>&lt;pre&gt;</code> tag:
 </h2>
 
-            <p>So if you really want it to be displayed like the real code in the editor you must apply the <code>&lt;pre&gt;</code> tag, as follows:</p>
+            <p>So if you really want it to be displayed like the real code in the editor you must apply the "code" tag inside the <code>&lt;pre&gt;</code> tag (check the source), and it renders as follows:</p>
 
             <p>
     <pre>
-        matches.forEach(function(match) {
+<code style="line-height: 18px;">        matches.forEach(function(match) { 
             match.parentNode.removeChild(match);
-          });
+          });</code>
     </pre>
 </p>
 
             <p>The above is the code as it was written.</p>
 
-<h2>Here's additional information about that from my <a href="https://rocketseat-discover-two.vercel.app/" target="blank" rel="noopener noreferrer">Rocketseat course page</a>:</h2>
+<h3>Here's additional information about that from my <a href="https://rocketseat-discover-two.vercel.app/" target="blank" rel="noopener noreferrer">Rocketseat course page</a>:</h3>
 
             <p>Please, pay attention where it mentions the HTML entities.</p>
 
 
 
 <div class="displaycode">
-<h2>&lt;pre&gt; THE <em>PREFORMATED TEXT</em> ELEMENT</h2>
+<h3>&lt;pre&gt; THE <em>PREFORMATED TEXT</em> ELEMENT according to MDN Web Docs:</h3>
 
 <figure>
     <blockquote>
-        <p>The HTML element represents preformatted text which is to be presented exactly(*!!!) as written in the HTML file. The text is typically rendered using a non-proportional, or <a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer">monospaced</a>, font. Whitespace inside this element is displayed as written. <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">MDN Web Docs</a></cite></p>
+        <p>The HTML element represents preformatted text which is to be presented <mark>exactly(*!!!)</mark> as written in the HTML file. The text is typically rendered using a non-proportional, or <a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer">monospaced</a>, font. Whitespace inside this element is displayed as written. <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">MDN Web Docs</a></cite></p>
     </blockquote>
 </figure>
 
-        <p>*!!! - It's not quite like that, as the very site continues:</p>
+        <p><mark>*!!! - It's not quite like that</mark>, as the very site continues:</p>
 
-        <p><q>If you have to display reserved characters such as <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> and <code>"</code> within the &lt;pre&gt; tag, the characters must be <strong style="color: black;">escaped</strong> using their respective <strong style="color: black;">HTML entity</strong>.</q></p>
+        <p><q>If you have to display reserved characters such as <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> and <code>"</code> within the &lt;pre&gt; tag, they must be <strong style="color: black;">escaped</strong> using their respective <strong style="color: black;">HTML <mark>entity</mark></strong>.</q></p>
 
         <p>IN OTHER WORDS, YOU MUST CANCELL THE HTML "CODE EFFECT" OF THOSE SYMBOLS (when displaying code).</p>
 
-<h2 style="color: black;">Do you remember what HTML entities are?</h2>
+<h2 style="color: black;">Do you remember what HTML <mark>entities</mark> are?</h2>
 
-        <h3>We've seen them  <a href="#above">above</a>. Let's review and see where they fit:</h3>
+        <h3>We've seen them  <a href="#above">above</a>. <mark>Let's review and see where they fit</mark>:</h3>
 
         <p>Entities are used to return / display special symbols.</p>
     
         <p>"An HTML entity  is used to display invisible and reserved characters that would otherwise be interpreted as HTML code.</p>
 
-        <p> <span style="color: black; background-color: gray;">An HTML entity is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).</span></p>
+        <p><mark>An HTML entity is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).</mark></p>
 
         <p>For instance, HTML will interpret the <q>less-than</q> sign ( &lt; ) as a tag opening if you don't write it as an entity.</p>
 
