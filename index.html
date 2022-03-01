@@ -470,6 +470,7 @@
 </h1>
 
 <p>The <code>&ltmark&gt;</code> tag makes the above <code>&lt;h1&gt;</code> heading (which I had "styled" to green) return to its original color, black.</p>
+
 <p>If you want it to continue the green CSS style I have defined for all <code>&lt;h1&gt;</code> tags you have to force it by applying an INLINE CSS to the <code>&ltmark&gt;</code> tag opening as follows:</p>
 
 <h1 style="margin-left: 200px;">
@@ -542,31 +543,38 @@
 
 
 <div class="displaycode">
-<h3>&lt;pre&gt; THE <em>PREFORMATED TEXT</em> ELEMENT according to MDN Web Docs:</h3>
+<h3>&lt;pre&gt; The <em>PREFORMATED TEXT</em> element according to MDN Web Docs: (What is <a href="https://en.wikipedia.org/wiki/MDN_Web_Docs" target="blank" rel="noopener noreferrer"><img src="images/MDN_Web_Docs.svg" height="30px" alt="MDN logo"></a> ?)</h3>
 
 <figure>
     <blockquote>
-        <p>The HTML element represents preformatted text which is to be presented <mark>exactly(*!!!)</mark> as written in the HTML file. The text is typically rendered using a non-proportional, or <a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer">monospaced</a>, font. Whitespace inside this element is displayed as written. <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">MDN Web Docs</a></cite></p>
+        <p>
+            <q>The HTML element represents preformatted text which is to be presented <mark>exactly as written in the HTML file (*!!!)</mark>. The text is typically rendered using a non-proportional, or <a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer">monospaced</a>, font. Whitespace inside this element is displayed as written</q>. <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">Check it at MDN</a></cite>
+
+        </p>
     </blockquote>
 </figure>
 
-        <p><mark>*!!! - It's not quite like that</mark>, as the very site continues:</p>
+        <p><mark>*!!! Be careful !!! - It's not quite like that</mark>, as the very site continues:</p>
 
-        <p><q>If you have to display reserved characters such as <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> and <code>"</code> within the &lt;pre&gt; tag, they must be <strong style="color: black;">escaped</strong> using their respective <strong style="color: black;">HTML <mark>entity</mark></strong>.</q></p>
+        <p><q>If you have to display reserved characters such as <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code> and <code>"</code> within the &lt;pre&gt; tag, they must be <strong style="color: black;"><mark>escaped</mark></strong> using their respective <strong style="color: black;">HTML <mark>entity</mark></strong>.</q></p>
 
         <p>IN OTHER WORDS, YOU MUST CANCELL THE HTML "CODE EFFECT" OF THOSE SYMBOLS (when displaying code).</p>
 
-<h2 style="color: black;">Do you remember what HTML <mark>entities</mark> are?</h2>
-
-        <h3>We've seen them  <a href="#above">above</a>. <mark>Let's review and see where they fit</mark>:</h3>
-
-        <p>Entities are used to return / display special symbols.</p>
+<div class="entity">
+    <h2 style="color: black;">Do you remember what HTML <mark>entities</mark> are?</h2>
     
-        <p>"An HTML entity  is used to display invisible and reserved characters that would otherwise be interpreted as HTML code.</p>
-
-        <p><mark>An HTML entity is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; ).</mark></p>
-
-        <p>For instance, HTML will interpret the <q>less-than</q> sign ( &lt; ) as a tag opening if you don't write it as an entity.</p>
+            <h3>We've seen them  <a href="#above">above (check first)</a>.</h3>
+            
+            <p>Now let's review and see where they fit:
+    
+            <p>Entities are used to return / display special symbols.</p>
+    
+            <p>"An HTML entity  is used to display invisible and reserved characters that would otherwise be interpreted as HTML code.</p>
+    
+            <p>n HTML entity is a piece of text, or string, that begins with an ampersand ( & ) and ends with a semicolon ( ; )./p>
+    
+            <p>For instance, HTML will interpret the <q>less-than</q> sign ( &lt; ) as a tag opening if you don't write it as an entity.</p>
+</div>
 
 <h2><code>& lt;</code> entity = <span style="color: blue;">&lt;</span></h2>
         <p>When I type the 3 characters above together (without the space I put there just to make it visible here) they make this symbol: &lt;</p>
@@ -579,19 +587,21 @@
         <P>Always with a semicolon at the end.</P>
 
 
-<h3>Here we have some symbols written this way:</h3>
-        <ul>
-        <li>&reg;</li>
-        <li>&copy;</li>
-        <li>&trade;</li>
-        <li>&yen;</li>
-        <li>&phone;</li>
-        <li>&female;</li>
-        <li>&spades;</li>
-        <li>&numero;</li>
-        </ul>
-
-<h3><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities (more than 1,500), which will open in a new tab.</a></h3>
+<div class="entity">
+    <h3>Here we have some symbols written this way:</h3>
+            <ul>
+            <li>&reg;</li>
+            <li>&copy;</li>
+            <li>&trade;</li>
+            <li>&yen;</li>
+            <li>&phone;</li>
+            <li>&female;</li>
+            <li>&spades;</li>
+            <li>&numero;</li>
+            </ul>
+    
+    <h3><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities (more than 1,500), which will open in a new tab.</a></h3>
+</div>
 
 
 <h1>To be continued...</h1>

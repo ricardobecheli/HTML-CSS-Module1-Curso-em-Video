@@ -86,3 +86,18 @@ li {
     padding: 100px;
     margin-right: 12%;
 }
+
+.entity {
+    box-shadow: 3px 3px 30px 20px rgb(180, 245, 245);
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(217, 174, 248, 0.747);
+    color: rgb(185, 3, 103);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
