@@ -497,7 +497,7 @@
             </p>
 
             <p>
-                <q>A monospaced font, also called a fixed-pitch, fixed-width, or non-proportional font, is a font whose letters and characters each occupy the same amount of horizontal space. This contrasts with variable-width fonts, where the letters and spacings have different widths. Check the comparison below.<a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer">Wikipedia</a></q>.
+                <q>A monospaced font, also called a fixed-pitch, fixed-width, or non-proportional font, is a font whose letters and characters each occupy the same amount of horizontal space. This contrasts with variable-width fonts, where the letters and spacings have different widths. Check the comparison below.</q><a href="https://en.wikipedia.org/wiki/Monospaced_font" target="blank" rel="noopener noreferrer"> (From Wikipedia)</a>.
             </p>
 
             <figure>
@@ -505,7 +505,7 @@
             </figure>
 
             <p>
-            If you just put a JS code snippet into a <code>&lt;code&gt;</code> tag like the example below, it does not replicate the line breaks and the identing:
+            If you just put a JS code snippet into a <code>&lt;code&gt;</code> tag it does not replicate the line breaks and the identing, like the example below:
             </p>
 
             <p>
@@ -517,24 +517,26 @@
             </p>
 
             <p>
-    It's just rendered as monospaced font (and - in this particular case - plus the black and green CSS I applied to all the code tags). No line separations, no indentation.
-</p>
+            It's just rendered as monospaced font (and - in this particular case - plus the black and green CSS I applied to all the code tags).
+            </p>
 
 <h2>
     The <code>&lt;pre&gt;</code> tag:
 </h2>
 
-            <p>So if you really want it to be displayed like the real code in the editor you must apply the "code" tag inside the <code>&lt;pre&gt;</code> tag (check the source), and it renders as follows:</p>
-
+            <p>
+            So if you really want it to be displayed like the real code in the editor <mark>you must apply the <code>&lt;code&gt;</code> tag inside the <code>&lt;pre&gt;</code> tag</mark> (check the source), and it renders as follows:</p>
             <p>
     <pre>
-<code style="line-height: 18px;">        matches.forEach(function(match) { 
+<code style="line-height: 18px;">
+        matches.forEach(function(match) { 
             match.parentNode.removeChild(match);
-          });</code>
+        });</code>
     </pre>
-</p>
+            </p>
 
-            <p>The above is the code as it was written.</p>
+            <p>The above is the code as it was written. (Line height was set to 18px so the braces opening was not cut by the second line background color).
+            </p>
 
 <h3>Here's additional information about that from my <a href="https://rocketseat-discover-two.vercel.app/" target="blank" rel="noopener noreferrer">Rocketseat course page</a>:</h3>
 
