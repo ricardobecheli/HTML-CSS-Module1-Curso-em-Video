@@ -20,7 +20,9 @@ code {
     background-color: black;
     color: chartreuse;
     padding: 2px;
+    font-family: monospace;
 }
+
 
 hr {
     border: 1px solid red;

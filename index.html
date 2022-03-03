@@ -533,17 +533,19 @@
 </h2>
 
             <p>
-            So if you really want it to be displayed like the real code in the editor <mark>you must apply the <code>&lt;code&gt;</code> tag inside the <code>&lt;pre&gt;</code> tag</mark> (check the source), and it renders as follows:</p>
+            So if you really want it to be displayed like the real code in the editor <mark>you must apply the <code>&lt;code&gt;</code> tag <strong>inside</strong> the <code>&lt;pre&gt;</code> tag</mark> (check the source), and it renders as follows:</p>
             <p>
     <pre>
-<code style="line-height: 18px;">
+<code style="line-height: 18px; background-color: rgba(250, 235, 215, 0.30); color: black;">
         matches.forEach(function(match) { 
             match.parentNode.removeChild(match);
         });</code>
     </pre>
             </p>
 
-            <p>The above is the code as it was written. (Line height was set to 18px so the braces opening was not cut by the second line background color).
+            <p>The above is the code as it was written*. <br>
+                (*Line height was set to 18px so the braces opening was not cut by the second line background color). <br>
+                (*I removed the black and green CSS applied to all the code tags)
             </p>
 
 <h3>Here's additional information about that from my <a href="https://rocketseat-discover-two.vercel.app/" target="blank" rel="noopener noreferrer">Rocketseat course page</a>:</h3>
