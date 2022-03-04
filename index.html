@@ -359,16 +359,16 @@
 
         <p>First, download the image to your "images" folder within your HTML project.</p>
         <p>(If you're a beginner like me, going through Visual Studio Code tutorials is not a bad idea)</p>
-        <p>Then, in the VSCode editor: just type <code>img</code> and Emmet, the automatic assistant, will write the rest for you. After it's done, place the cursor in between the first quotation marks (src="") of the "img" tag, press ctrl+spacebar and chose your image from your folder on the dialogue box.</p>
-        <p>The second quotation marks (alt="") of the "img" tag are for you to write a quick description of the picture. It serves to appear in the screen in case the image doesn't load for any reason AND to be read out loud for those who wish the browser to do that.</p>
+        <p>Then, in the VSCode editor: just type <code>img</code> and Emmet, the automatic assistant, will write the rest for you. After it's done, place the cursor in between the first pair of quotation marks (src="") of the "img" tag, press ctrl+spacebar and chose your image from your folder on the dialogue box.</p>
+        <p>The second pair of quotation marks (alt="") of the "img" tag are for you to write a quick description of the picture. It serves to appear in the screen in case the image doesn't load for any reason AND to be read out loud for those who wish the browser to do that.</p>
         
 
     <h3>2) Straight from another website:</h3>
 
         <p>Copying an image <strong>address</strong>   from another website is an alternative way of adding an image to your page.</p>
         <p>The disadvantage is that the image in your page will always depend on the existence of the original one and more: it must be exactly where it was when you copied the eddress. If their website crashes, your linked image crashes. If they change anything in the addres, the link is gone and so does the image.</p>
-        <p>Just right click any image of any website and choose "copy image address" (or whatever is closer to that). Then, paste it between the first quotation marks (src="") of the "img" tag.</p>
-        <p>Again: The second quotation marks (alt="") of the "img" tag are for you to write a quick description of the picture. It serves to appear in the screen in case the image doesn't load for any reason AND to be read out loud for those who wish the browser to do that.</p>
+        <p>Just right click any image of any website and choose "copy image address" (or whatever is closer to that). Then, paste it between the first pair of quotation marks (src="") of the "img" tag.</p>
+        <p>Again: The second pair of quotation marks (alt="") of the "img" tag are for you to write a quick description of the picture. It serves to appear in the screen in case the image doesn't load for any reason AND to be read out loud for those who wish the browser to do that.</p>
         <p>This is an example (linked from G1.com):</p>
         <img src="https://s2.glbimg.com/DHCxxKd2oxxJwWNSGcbtwhTDapA=/0x0:1200x5562/640x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/8/c/wBz1OySaygj4v3cLRJTw/0102-cadeira-escritorio-ergonomia.jpg" alt="Imagem do G1" width="300">
 
@@ -533,7 +533,13 @@
 </h2>
 
             <p>
-            So if you really want it to be displayed like the real code in the editor <mark>you must apply the <code>&lt;code&gt;</code> tag <strong>inside</strong> the <code>&lt;pre&gt;</code> tag</mark> (check the source), and it renders as follows:</p>
+            So if you really want it to be displayed like the real code in the editor <mark>you must apply the <code>&lt;code&gt;</code> tag <strong>inside</strong> the <code>&lt;pre&gt;</code> tag</mark> (check the source).</p>
+            
+            <p>This tag also displays the text as it is formated at the origin, or PRE-formated (hence the name of the tag).</p>
+            
+            <p>And it renders code as follows:</p>
+
+
             <p>
     <pre>
 <code style="line-height: 18px; background-color: rgba(250, 235, 215, 0.30); color: black;">
@@ -543,9 +549,14 @@
     </pre>
             </p>
 
-            <p>The above is the code as it was written*. <br>
-                (*Line height was set to 18px so the braces opening was not cut by the second line background color). <br>
-                (*I removed the black and green CSS applied to all the code tags)
+
+            <p>Important remarks:<br>
+
+                <ul>
+                    <li>Line height was set to 18px so the braces opening was not cut by the second line background color.</li>
+                    <li>I removed the black and green CSS I applied (with regrets and I've learned from that) to all the code tags.</li>
+                </ul>
+
             </p>
 
 <h3>Here's additional information about that from my <a href="https://rocketseat-discover-two.vercel.app/" target="blank" rel="noopener noreferrer">Rocketseat course page</a>:</h3>
@@ -626,7 +637,9 @@
 </div>
 
 
-<h1>To be continued...</h1>
+<h1>QUOTATIONS</h1>
+
+
 
 
 
