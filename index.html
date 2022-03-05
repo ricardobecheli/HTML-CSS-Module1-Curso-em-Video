@@ -680,10 +680,185 @@
                 Examples of semantic elements: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;article&gt;</code> - Clearly defines its content.
             </p>
 
-            <h3>
-                2) The <code>&lt;cite&gt;</code> tag
-            </h3>
 
+
+
+
+<h1 style="background-color: black; margin-top: 70px; margin-bottom: 70px; color: azure; padding: 7px;">
+
+    Quotations from the Rocketseat course:
+    
+</h1>
+
+
+
+
+    
+    <div class="comment">
+    
+        <h2>Double x Single quotes</h2>
+        <p>
+             Using double quotes in attributes is better than the single ones because the last ones can be confused with English grammar signs, like <q>I'm</q> or <q>There's</q>, for instance. Note that Emmet itself provides us always with double quotes. This is one of the good practices in coding.
+        </p>
+    <h2>Quotes - Omiting</h2>
+        <p>
+            Some attributes can work without quotes, like in the <q>a</q> tag: The hypertext will work without being between quotes, but it's not a good practice because if you add another attribute (like <q>target</q>, for instance) immediately following the unquoted hyperlink there can be a big conflict of interpretation depending on the user's browser. 
+        </p>
+    
+            <h2>There are 3 kinds of citation syntax/tags (in fact I discovered more kinds that the course didn't mention - see items 4, 5 and 6):</h2>
+    
+            <ol>
+                <li><code>&lt;blockquote&gt;</code></li>
+                <li><code>&lt;cite&gt;</code></li>
+                <li><code>&lt;q&gt;</code></li>
+                <p>(And now, the items I found at <a href="https://www.w3schools.com/html/html_quotation_elements.asp"  >w3schools - quotation elements</a>.)</p>
+                <li><code>&lt;abbr&gt;</code></li>
+                <li><code>&lt;address&gt;</code></li>
+                <li><code>&lt;bdo&gt;</code></li>
+            </ol>
+    
+        <hr>
+    
+            <ol style="margin-left: 70px; ">
+                <li style="padding-bottom: 55px;">Bad example of <blockquote>Only this line here is in the tag (so far so good but no links nor mention to the source)</blockquote> and here out of the tag. </li>
+                <li style="padding-bottom: 55px;">Bad example of <cite>cite</cite> here. (alone, without the source in the code)</li>
+                <li style="padding-bottom: 55px;">Bad example of "q" (keyboard quotation marks) <q>here</q> (code quotation marks). In fact the coded one is nor bad at all, it's just a quotation without any major semantic meaning.</li>
+                </ol>
+    
+        <hr>
+    
+            <ol>
+    
+                <li style="padding-bottom: 55px;">
+                    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+    
+                        <p>In a good example of blockquote everything in a block - you could say a whole paragraph or a long text - must be inside the <code>&lt;blockquote&gt;</code> tag. It indents the block and indicates that an external text was cited. A good way to complement that is adding an information about the origin of the citation. This info <u>does not appear</u> in the HTML page, only in the code. The information will be done by an <strong><u>attribute</u></strong> called "<u>cite</u>" inside the blockquote opening tag (like we do with the <em>inline style</em>) and it's not to be confused with the <strong><u>element</u></strong> <code>&lt;cite&gt;</code> of item 2 below.</p>
+    
+                        <p>Use CSS' (margin-left: 0;) to remove the indentation from the blockquote element.</p>
+    
+                        <p>HTML Blockquote is a DOM  Object. You can access a blockquote element by using getElementById(). Example:</p>
+                        
+                        <p>var x = document.getElementById("myBlockquote");</p>
+    
+                        <p>The Blockquote object also supports the standard properties and events.</p>
+                    
+                    </blockquote>
+                </li>
+    
+    
+                <li style="padding-bottom: 55px;">
+                    <p>Good example of <cite>cite</cite> here. The HTML <code>&lt;cite&gt;</code> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.)</p>
+    
+                    <p><cite>Catcher in the Rye</cite> (this title is within a <code>&lt;cite&gt;</code> tag) is a novel by Jerome David Salinger.</p>
+    
+                    <p>A complete definition and usage examples of this HTML element can be found at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite</a>.</p>
+    
+                    <p>(Now, just for comparison purposes, <strong >check how poorer</strong> the Brazilian portuguese version of the above page is in the same web platform: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite" target="blank" rel="noopener noreferrer" >https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/cite</a>.)</p>
+    
+                    <p>Continuing from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite</a>:</p>
+    
+                    <p>Look at the interesting example they give:</p>
+    
+                    <figure style="background-color: black; padding: 10px; margin-bottom: 30px; padding-bottom: 30px; margin-right: 60px; margin-left: 0%;">
+                        <blockquote>
+                            <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+                        </blockquote>
+                        <figcaption>First sentence in <cite><a href="http://www.george-orwell.org/1984/0.html" target="blank" rel="noopener noreferrer" style="color: wheat;">Nineteen Eighty-Four</a></cite> by George Orwell (Part 1, Chapter 1).</figcaption>
+                    </figure>
+    
+                    <p>It has a <code>cite</code> inside a <code style="background-color: black; color: rgb(255, 5, 180);">figcaption</code> and they are both inside a <code style="background-color: black; color: yellow;">&lt;figure&gt;</code> element. Note that the paragraph tag is surrounded by a <code style="background-color: black; color: red;">blockquote</code> element. 
+    
+                </li>
+    
+    
+                <li style="padding-bottom: 55px;">
+                    <p>Good example of <q>q</q> (applyed here) <q>and here</q>:</p>
+                        
+                    <p>Use <code>&lt;q&gt;</code> for <strong>inline</strong>, short quotations. <q><em>This element is intended for short quotations that don't require paragraph breaks; for long quotations use the &lt;blockquote&gt; element</em></q>. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="blank" rel="noopener noreferrer" style="color: rgb(3, 192, 192);">MDN</a>
+                    </p>
+    
+                    <p>Browsers normally insert quotation marks around the quotation, like <q>now</q>. And is that it?</p>
+    
+                    <p>No. This element may include global attributes. Therefore it can be combined with the <code>&lt;cite&gt;</code>, for instance.</p>
+                    
+                    <p>Again, note that the value of the <code>&lt;cite&gt;</code> attribute is a URL that <strong>designates a source</strong> document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote. No more than that. </p>
+                    
+                    <p>I mean, no link is established. It's only an information that stays hidden from the user and works behind the scenes for SEO and other algorithm purposes.</p>
+    
+                    <p>All this said, something like this can be built with <code>&lt;q&gt;</code> and <code>&lt;cite&gt;</code> combined:</p>
+    
+                    <p style="text-indent: 30px;">According to Mozilla's website,
+                        <q
+                        cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
+                        was released in 2004 and became a big success.</q></p>
+    
+                    <p>And the code is written as follows (for "Displaying Code" in details, see next topic, but take a glimpse of this for while):</p>
+    
+                    <pre>
+    
+                        &lt;p&gt;According to Mozilla's website,
+                            &lt;q
+                            cite="https://www.mozilla.org/en-US/about/history/details/"&gt;Firefox 1.0
+                            was released in 2004 and became a big success.&lt;/q&gt;&lt;/p&gt;  
+    
+                    </pre>
+    
+                </li>
+    
+                <li style="padding-bottom: 55px;"><p>&lt;abbr&gt; for Abbreviations</p>
+                    <p>From <a href="https://www.w3schools.com/html/html_quotation_elements.asp" target="blank" rel="noopener noreferrer">w3schools</a>: </p>
+                    
+                    <blockquote>
+                        <p>The HTML <code>&lt;abbr&gt;</code> tag defines an abbreviation or an acronym, like <abbr title="HiperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="Mister">Mr.</abbr>, <abbr title="Doctor">Dr.</abbr>, <abbr title="As Soon As Possible">ASAP</abbr>, "<abbr title="Automated Teller Machine">ATM</abbr>".</p>
+                        <p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+                        <p>Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.</p>
+                        <p>Example</p>
+                        <blockquote>
+                            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (Did you think it was Roger Daltrey's rock band?)</p>
+                        </blockquote>
+                    </blockquote>
+                </li>
+    
+    
+                <li style="padding-bottom: 55px;"><p>&lt;address&gt; for Contact Information</p>
+                    <p>From <a href="https://www.w3schools.com/html/html_quotation_elements.asp" target="blank" rel="noopener noreferrer">w3schools</a>: </p>
+    
+                    <p>The HTML <code>&lt;address&gt;</code> tag defines the contact information for the author/owner of a document or an article.</p>
+                    <p>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</p>
+                    <p>The text in the &lt;address&gt; element usually renders in italic, and browsers will always add a line break before and after the &lt;address&gt; element.</p>
+                    <p>Example:</p>
+                    <address>
+                        Written by John Doe.<br>
+                        Visit us at:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address>
+                </li>
+    
+    
+                <li style="padding-bottom: 55px;"><p>&lt;bdo&gt; for Bi-Directional Override</p>
+                    <p>From <a href="https://www.tutorialrepublic.com/html-reference/html-bdo-tag.php" target="blank" rel="noopener noreferrer" >Tutorial Republic</a>: </p>
+    
+                    <p>The <code>&lt;bdo&gt;</code> (short for bidirectional override) tag is used to override the current text direction.
+    
+                        You must specify the <code>"dir"</code> attribute on this element. This mandatory attribute specifies the base direction of the element's text content, which overrides the inherent directionality of characters as defined in [UNICODE].</p>
+                        
+                    <p>Attributes: This element contains dir attributes which are used to specify the direction of text written inside the <code>&lt;bdo&gt;</code> element. The dir attribute contains two values which are listed below:</p> 
+     
+                        <ul>
+                        <li><code>&lt;bdo dir="<abbr title="right to left">rtl</abbr>"&gt;</code>: The text direction from right to left (reverse the text).</li>
+                        <li><code>&lt;bdo dir="<abbr title="left to right">ltr</abbr>"&gt;</code>: The text usual direction from left to right.</li>
+                        </ul>
+                    
+                    <p>The sequence "1-2-3-4-5" was reversed in this line by this set of tag & attribute as: <bdo dir="rtl">1-2-3-4-5</bdo>.</p>
+                </li>
+    
+            </ol>
+            
+    </div>
+
+    <h1>To be continued...</h1>
 
             
 
