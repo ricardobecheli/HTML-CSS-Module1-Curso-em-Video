@@ -263,7 +263,7 @@
 
         <p>The <code>&lt;del&gt;</code> tag <del>marks a text as non-valid</del> or deleted.</p>
 
-<h1><em>ins</em> tag</h1>
+<h1><a id="backtoins"></a><em>ins</em> tag</h1>
         <p>The <code>&lt;ins&gt;</code> tag underlines the text to give the kind of enphasis s if he text has been <ins>filled in the blank space, or inserted</ins>.</p>
         <p><mark>Don't confuse this tag with the "u" one</mark>. "U" is not semantic. It just <u>underlines</u> and that's it, no meanings whatsoever.</p>
 
@@ -690,9 +690,15 @@
     </h3>
 
             <p>
-                The <code>&lt;cite&gt;</code> attribute specifies a URL to a document that explains the quote, or why the text was inserted/changed.
+                The <code>&lt;cite&gt;</code> attribute is not displayed in the screen. Its purpose is to orient SEO... And most of all it specifies a URL to a document that explains:
             </p>
-            <p>It is not displayed in the screen. Its purpose is to orient SEO </p>
+            <ul>
+                <li>A section that is quoted from another source <code>&lt;blockquote&gt;</code> (see below), or</li>
+                <li>The quote <code>&lt;q&gt;</code>(see below), or</li>
+                <li>Why the text was inserted <code>&lt;ins&gt;</code> <a href="#backtoins">(check the ins tag above)</a>, or</li>
+                <li>Why some text was deleted <code>&lt;del&gt;</code> <a href="#backtodel">(check the del tag above)</a>, containing a URL to a document that explains the deletion  .</li>
+            </ul>
+
             <p><a href="https://www.w3schools.com/tags/att_cite.asp">w3-att_cite</a></p>
 
             <p><a href="https://www.webucator.com/article/how-to-mark-up-a-citation-in-html/">webucator-how-to-mark-up-a-citation-in-html</a></p>
@@ -706,10 +712,18 @@
 
 
     <h3>
-        4) The <code>&lt;q&gt;</code> tag
+        4) The <code>&lt;abbr&gt;</code> tag
     </h3>
 
-            <p>Say...</p>
+            <p>The <code>&lt;abbr&gt;</code> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". </p>
+
+            <p>
+                In VSCode, Emmet brings it to us already with the global <code>&lt;title&gt;</code> attribute to show the description for the abbreviation/acronym when you mouse over the element. Example:
+            </p>
+
+            <p>
+                If you pass the mouse pointer over the <abbr title="HyperText Markup Language">HTML</abbr> abbreviation you will see its meaning.
+            </p>
 
 
             
