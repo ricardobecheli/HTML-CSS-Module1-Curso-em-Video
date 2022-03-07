@@ -649,7 +649,7 @@
             <li>&numero;</li>
             </ol>
     
-    <h3><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">Through this link you to to a COMPLETE LIST  of html entities (more than 1,500), which will open in a new tab.</a></h3>
+    <h3><a  href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html"  target="blank" rel="noopener noreferrer">Through this link you to to a COMPLETE LIST  of html entities (more than 1,500), which will open in a new tab.</a></h3>
 </div>
 
 
@@ -657,7 +657,7 @@
 
 
 <p>
-    <a href="https://www.w3schools.com/html/html_quotation_elements.asp">w3-quotation_elements</a>
+    <a href="https://www.w3schools.com/html/html_quotation_elements.asp" target="blank" rel="noopener noreferrer">w3-quotation_elements</a>
 </p>
 
     <h3>
@@ -699,16 +699,25 @@
                 <li>Why some text was deleted <code>&lt;del&gt;</code> <a href="#backtodel">(check the del tag above)</a>, containing a URL to a document that explains the deletion  .</li>
             </ul>
 
-            <p><a href="https://www.w3schools.com/tags/att_cite.asp">w3-att_cite</a></p>
-
-            <p><a href="https://www.webucator.com/article/how-to-mark-up-a-citation-in-html/">webucator-how-to-mark-up-a-citation-in-html</a></p>
-
             
     <h3>
         3) The <code>&lt;blockquote&gt;</code> tag
     </h3>
 
-            <p>Say...</p>
+            <p style="margin-left: 0px;">The HTML <code>&lt;blockquote&gt;</code> element defines a section that is quoted from another source.</p>
+
+            <p style="margin-left: 0px;">Browsers usually indent <code>&lt;blockquote&gt;</code> elements and that's it. No quotation marks, no italic. Look:</p>
+
+            <p style="margin-left: 0px;">Here is a quote from WWF's website:</p>
+
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            <p>For 50 years, WWF has been protecting the future of nature...</p>
+            <p>WWF works in 100 countries...</p>
+            </blockquote>
+
+            <p style="margin-left: 0px;">See how the code gets:</p>
+
+            <img src="images/blockquote-code.png" width="600px" alt="block code image">
 
 
     <h3>
@@ -753,6 +762,11 @@
 
     <h4>1.1 - Ordered HTML List - The Type Attribute</h4>
 
+
+            <p>Once you start typing the word "type", Emmet gives you the hints:</p>
+
+            <img src="images/emmet-ordered-lists-type.jpg" width="700px" alt="Emmet gives the type hints">
+
             <p>1.1.1) type="1"	The list items will be numbered with numbers (default)</p>
             <p>Example:</p>
             <ol type="1">
@@ -773,7 +787,7 @@
               <img src="images/type-A-ordered-list.png" width="300px" alt="">
 
             <p>1.1.3) type="a"	The list items will be numbered with lowercase letters</p>
-            <p>Examnple:</p>
+            <p>Example:</p>
             <ol type="a">
                 <li>Coffee</li>
                 <li>Tea</li>
@@ -796,6 +810,18 @@
                 <li>Milk</li>
               </ol>
 
+
+    <h3>1.2) The <code>start</code> attribute:</h3>
+
+            <ol type="1" start="7">
+                <li>If you...</li>
+                <li>Had stopped the list at, let's say, number 6, for instance...</li>
+                <li>And wishes to continue from where it sopped.</li>
+            </ol>
+
+            <p>The code stays this way:</p>
+
+            <img src="images/ordered-start.png" width="600px" alt="code re-start the list">
 
 
 
@@ -829,11 +855,12 @@
               </ul>
               
 
-<h3>4) Nested lists</h3>
+
+<h3>4) Nested lists 1</h3>
 
             <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested">w3-nested</a></p>
 
-            <blockquote cite="https://www.webucator.com/article/how-to-properly-nest-lists-in-html/">
+
                 <ul>
                     <li>Fruit
                       <ul>
@@ -850,8 +877,44 @@
                     <li>Vegetables</li>
                     <li>Meat</li>
                   </ul>
-            </blockquote>
-   
+
+            
+            <p>See how the nested list code is:</p>
+
+            <img src="images/nested-list.png" width="700px" alt="nested list code">
+
+
+<h3>4.1) Nested lists 2 </h3>
+
+<h4>Example of programming languages:</h4>
+
+            <ol>
+                <li>Old ones</li>
+                <ol type="a">
+                    <li>Clipper</li>
+                    <li>Fortram</li>
+                        <ul>
+                            <li>Fort1</li>
+                            <li>Fort2</li>
+                        </ul>
+                    <li>Visual Basic</li>
+                    <li>Delphi</li>
+                </ol>
+
+                <li>New ones</li>
+                <ol type="a" start="5">
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                </ol>
+
+            </ol>
+
+            <p>Just to show the feature I set the start of the "new ones" to "5", meaning the 5th letter of the sequence.</p>
+
+            <p>And I invented "Fort1" and "Fort2" just to show you that the unordered nesting cause a progressive indentation. Like the fruits in "nested lists 1" above.</p>
+
 
 <h3>5) Description lists</h3>
 
@@ -867,16 +930,19 @@
 
             <dl style="margin-left: 100px;">
                 <dt>Coffee</dt>
-                <dd>- black hot drink</dd>
+                <dd>A black hot drink</dd>
                 <dt>Milk</dt>
-                <dd>- white cold drink</dd>
+                <dd>A white cold drink</dd>
               </dl>
 
-            <p>Syntax example (I put the margin left to indent the example):</p>
+            <p>Syntax example (I've set a 100px margin left to indent the whole example):</p>
 
             <img src="images/description-list.png" width="300px" alt="description list code image">
+
+
     
 <h1>to be continued...</h1>
+
     
     
 
