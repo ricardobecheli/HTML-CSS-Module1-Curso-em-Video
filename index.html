@@ -990,27 +990,27 @@
             </p>
 
 
-                <p>The HTML element:</p>
-                <p><code>&lt;a href=""&gt;&lt;/a&gt;</code></p>
+            <p>The HTML element:</p>
+            <p><code>&lt;a href=""&gt;&lt;/a&gt;</code></p>
 
-                <p><code>a</code> means anchor and <code>href</code> means hypertext reference.</p>
+            <p><code>a</code> means anchor and <code>href</code> means hypertext reference.</p>
 
-                And how it's filled:
-                <a href=""></a>
-                <p><code>&lt;a href="<span style="color: white;">the URL comes here</span>"&gt;<span style="color: rgb(65, 162, 252);">and the text that will become hyperlink comes here</span>&lt;/a&gt;</code></p>
+            And how it's filled:
+            <a href=""></a>
+            <p><code>&lt;a href="<span style="color: white;">the URL comes here</span>"&gt;<span style="color: rgb(65, 162, 252);">and the text that will become hyperlink comes here</span>&lt;/a&gt;</code></p>
 
 <h3>And there's something very important:</h3>
 
-                <p>
-                    As you can see in the code below, there are a "target" and a "rel" attributes, meaning:
-                </p>
+            <p>
+                As you can see in the code below, there are a "target" and a "rel" attributes, meaning:
+            </p>
 
                 <ol type="a">
                     <li><span style="color: red;"><em>target="blank"</em></span> means that the target page will be opened in a new tab of your browser.</li>
                     <li><span style="color: red;"><em>rel="noopener noreferrer"</em></span> means that the opening of a new tab will avoid undesired invaders (crackers). Not doing this can be risky.</li>
                 </ol>
 
-                <p>Check the code:</p>
+            <p>Check the code:</p>
 
                 <img src="images/href-code.png" width="100%" style="margin-bottom: 50px;" alt="The href code">
 
@@ -1019,17 +1019,22 @@
 
     <h3>2.1) Link to pages of the same website:</h3>
 
-                <p>This kind of link is made to a <strong>relative URL</strong> (without the "<code>https://www</code>" part).</p>
+            <p>This kind of link is made to a <strong>relative URL</strong> (without the "<code>https://www</code>" part).
+            </p>
 
 
     <h4>2.1.1) Belonging to the same folder as the current one.</h4>
 
-                <p>Just click <a href="samefolder1.html" target="blank" rel="noopener noreferrer">here</a> to go there.</p>
+            <p>
+                Just click <a href="samefolder1.html" target="blank" rel="noopener noreferrer">here</a> to go there.
+            </p>
 
     <h4>2.1.2) Stored in another folder of the same website.</h4>
 
     
-                <p>And <a href="new-folder/newfolder2.html" target="bank" rel="noopener noreferrer">here you go to a page stored in the "new-folder"</a>.</p>
+            <p>
+                And <a href="new-folder/newfolder2.html" target="bank" rel="noopener noreferrer">here you go to a page stored in the "new-folder"</a>.
+            </p>
     
     
     
@@ -1037,16 +1042,76 @@
     
     <h3>2.2) Link to a certain line (or section) of the same page, in 2 steps:</h3>
                 
-                <p>a) First, you use an <code>id</code> to give an unique name to the destination point of the future link.</p>
-                <img src="images/above1.png" width="50%" style="margin-bottom: 30px;" alt="Code: anchor in the same page.">
+            <p>a) First, you use an <code>id</code> to give an unique name to the destination point of the future link.</p>
+            <img src="images/above1.png" width="50%" style="margin-bottom: 30px;" alt="Code: anchor in the same page.">
 
-                <p>b) And soon after that you make the link through the usual <code>&lt;a&gt;</code> tag, pointing the hypertext reference (<code>href</code>) to the <code>id</code> through a <code>#</code> plus the name of the id.</p>
-                <img src="images/above2.png" width="70%"style="margin-bottom: 50px;" alt="Code: link to the anchor in the same page.">
+            <p>b) And soon after that you make the link through the usual <code>&lt;a&gt;</code> tag, pointing the hypertext reference (<code>href</code>) to the <code>id</code> through a <code>#</code> plus the name of the id.</p>
+            <img src="images/above2.png" width="70%"style="margin-bottom: 50px;" alt="Code: link to the anchor in the same page.">
 
     <h3>2.3) Download link:</h3>
 
-                From here you can download a <a href="book/Internet History in Portuguese.pdf">PDF book from Curso Em Vídeo</a> about the Internet History.
+            <p>From here you can download a <a href="book/Internet History in Portuguese.pdf">PDF book from Curso Em Vídeo</a> about the Internet History.</p>
     
+<h1>RESPONSIVE IMAGES</h1>
+
+            <p>This helps to improve performance across different devices. Responsive images are just one part of responsive design, a future CSS topic for us to learn.</p>
+
+            <p>
+                We will learn how to use features like <code>srcset</code> and the <code>&lt;picture&gt;</code> element to implement responsive image solutions on websites.
+            </p>
+
+            <div class="entity">
+                <P>
+                    After applying the HTML elements below, open this page in different devices such as a PC, a tablet or a cell phone to see the magic working. If you don't have several devices in hand, just gradually shorten/enlarge the size of your browser.
+                </P>
+            </div>
+
+            <img src="images/responsive-image-code.png" width="80%" alt="responsive image code">
+
+            <p>
+                You can check the details of this feature at <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">MDN Web Docs</a>.
+            </p>
+
+            <picture>
+                <source media="(max-width: 750px)" srcset="images\james-webb-small.jpg" type="image/jpg">
+
+                <source media="(max-width: 1050px)" srcset="images\james-webb-medium.jpg" type="image/jpg">
+                <img src="images/james-webb-large.jpg" alt="responsive image">
+            </picture>
+
+<h1>ADDING AUDIO</h1>
+
+<p>There are two ways of inserting audio into your page:</p>
+
+<p>
+    <ul>
+        <li>The <code>&lt;audio&gt;</code> tag.</li>
+        <li>The <code>&lt;audio&gt;</code> plus <code>&lt;source&gt;</code> tags.</li>
+    </ul>
+</p>
+
+<h2>The <code>&lt;audio&gt;</code> tag</h2>
+
+            <p>This is "Dubstep", from <a href="https://www.bensound.com/" target="blank" rel="noopener noreferrer">Bensound</a>:</p>
+
+            <p>
+                <audio src="midia/music/bensound-dubstep.mp3" controls></audio>
+            </p>
+
+            <p><img src="images/audio1-dubstep.png" width="70%" alt="music1-code"></p>
+
+<h2>The <code>&lt;audio&gt;</code> plus <code>&lt;source&gt;</code> tags</h2>            
+            
+            <p>And here you have "Funkyelement", also from <a href="https://www.bensound.com/" target="blank" rel="noopener noreferrer">Bensound</a>:</p>
+
+            <p>
+                <audio controls>
+                    <source src="midia/music/bensound-funkyelement.mp3" type="audio/mpeg">
+                </audio>
+            </p>
+
+            <p><img src="images/audio2-funkyelement.png" width="70%" alt="music-2 code"></p>
+
 
     
     
