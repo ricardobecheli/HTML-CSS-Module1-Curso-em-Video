@@ -118,7 +118,7 @@
 
 <pre style="margin-left: 50px;">
                 
-<code>#para1 { 
+<code> #para1 { 
     color:rgb(224, 54, 2); 
         } </code>
                 
@@ -1100,9 +1100,19 @@
 
             <p><img src="images/audio1-dubstep.png" width="70%" alt="music1-code"></p>
 
-<h2>The <code>&lt;audio&gt;</code> plus <code>&lt;source&gt;</code> tags</h2>            
+<h2>The <code>&lt;audio&gt;</code> plus <code>&lt;source&gt;</code> tags</h2>
+
+            <p>
+                The <code>&lt;source&gt;</code> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+            </p>
+
             
             <p>And here you have "Funkyelement", also from <a href="https://www.bensound.com/" target="blank" rel="noopener noreferrer">Bensound</a>:</p>
+
+            <p>
+                Suppose I had an alternative "ogg" oudio format for this song (which I don't, as you will see in the code. I just staged the snippet to print the image as an example). I would put it just below my main option, which now is the "mp3". If your browser for any reason would not recognize the mp3 file, it would automatically play the ogg one.
+            </p>
+
 
             <p>
                 <audio controls>
@@ -1110,7 +1120,16 @@
                 </audio>
             </p>
 
-            <p><img src="images/audio2-funkyelement.png" width="70%" alt="music-2 code"></p>
+
+            <p><img src="images/audio3-funkyelement-alternatives.png" width="70%" alt="music-2 code"></p>
+
+
+<h1>VIDEO</h1>
+
+<h2>Video file formats</h2>
+
+
+
 
 
     
