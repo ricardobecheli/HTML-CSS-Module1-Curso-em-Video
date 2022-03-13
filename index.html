@@ -1137,11 +1137,15 @@
             <img src="images/video-code.png" width="50%" alt="video code">
 
             <p>
-                The controls attribute adds video controls, like play, pause, and volume.
+                The <code>controls</code> attribute adds video controls, like play, pause, and volume.
             </p>
 
             <p>
-                It is a good idea to always include <code>width</code> and <code>height</code> attributes. If height and width are not set, the page might flicker while the video loads.
+                "It is a good idea to always include <code>width</code> and <code>height</code> attributes. If height and width are not set, the page might flicker while the video loads". (w3schools)
+            </p>
+
+            <p>
+                Anyway, I have set here ONLY  the width (at 30%) to avoid disturbing the original  width x height proportion. The snippet image above is just an example copied from w3schools and placed in my code for some minutes. And I have no "ogg" video file either.
             </p>
 
             <p>
@@ -1152,10 +1156,30 @@
                 The text between the <code>&lt;video&gt;</code> and <code>&lt;/video&gt;</code> tags (<em>"Your browser does not support the video tag."</em>) will only be displayed in browsers that do not support the <code>&lt;video&gt;</code> element.
             </p>
 
-            <p>To start a video automatically when the page is loaded, use the autoplay attribute after the <code>width</code> and <code>height</code> parameters, instead of "<code>controls</code>".</p>
+            <p>To start a video automatically when the page is loaded, use the <code>autoplay</code> attribute after the <code>width</code> and <code>height</code> parameters, instead of "<del><code>controls</code></del>".</p>
 
-            <video src="https://www.pexels.com/pt-br/video/asfalto-barco-bote-canal-5380467/">Vídeo de Rulo Davila no Pexels</video>
-    
+            <video width="20%" controls>
+
+                <source src="midia/video/pexels-rulo-davila-5380467.mp4" type="video/mp4">
+
+                <source src="midia/video/pexels-rulo-davila-5380467.ogg" type="video/ogg">
+
+                Your browser does not support the video tag.
+
+            </video>
+            <p>Video from:<cite>"https://www.pexels.com/pt-br/video/asfalto-barco-bote-canal-5380467/" Author: Rulo Davila, at Pexels</cite></p>
             
+            <p>
+                Teacher Guanabara advices us to use Handbrake video transcoder app to make different versions of our video, but the app doesn't run in my 8.1 Windows. So...
+            </p>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
