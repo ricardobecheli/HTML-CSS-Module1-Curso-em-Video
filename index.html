@@ -1128,11 +1128,34 @@
 
 <h2>Video file formats</h2>
 
+            <p>
+                To show a video in HTML, use the <code>&lt;video&gt;</code> element:
+            </p>
 
+            <p>Example</p>
 
+            <img src="images/video-code.png" width="50%" alt="video code">
 
+            <p>
+                The controls attribute adds video controls, like play, pause, and volume.
+            </p>
 
+            <p>
+                It is a good idea to always include <code>width</code> and <code>height</code> attributes. If height and width are not set, the page might flicker while the video loads.
+            </p>
+
+            <p>
+                The <code>&lt;source&gt;</code> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+            </p>
+
+            <p>
+                The text between the <code>&lt;video&gt;</code> and <code>&lt;/video&gt;</code> tags (<em>"Your browser does not support the video tag."</em>) will only be displayed in browsers that do not support the <code>&lt;video&gt;</code> element.
+            </p>
+
+            <p>To start a video automatically when the page is loaded, use the autoplay attribute after the <code>width</code> and <code>height</code> parameters, instead of "<code>controls</code>".</p>
+
+            <video src="https://www.pexels.com/pt-br/video/asfalto-barco-bote-canal-5380467/">Vídeo de Rulo Davila no Pexels</video>
     
-    
+            
 </body>
 </html>
