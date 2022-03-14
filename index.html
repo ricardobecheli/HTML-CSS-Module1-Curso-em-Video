@@ -1126,7 +1126,11 @@
 
 <h1>VIDEO</h1>
 
-<h2>Video file formats</h2>
+<h2>1) Hosting video in your own website - the <code>&lt;video&gt</code>; element.</h2>
+
+            <p>
+                Before anything, be careful! Using this element to embed videos may cause a heavy increase of traffic costs to your website. Read more at <a href="https://wave.video/blog/embed-video-on-website/">Wave.video</a>
+            </p>
 
             <p>
                 To show a video in HTML, use the <code>&lt;video&gt;</code> element:
@@ -1166,6 +1170,18 @@
 
             <p>To start a video automatically when the page is loaded, use the <code>autoplay</code> attribute after the <code>width</code> and <code>height</code> parameters, instead of "<del><code>controls</code></del>".</p>
 
+            <p>
+                Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.
+            </p>
+
+            <p>
+                You can also add the <code>loop</code> attribute o the video element to keep the video running again and again.
+            </p>
+
+            <p>
+                For complete detais about  the video element, check <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">MDN Web Docs.</a>
+            </p>
+
             <div class="entity">
                 <video width="40%" poster="images/salvavidas.jpg" controls>
                     <source src="midia/video/pexels-rulo-davila-5380467.mp4" type="video/mp4">
@@ -1180,16 +1196,53 @@
             <p>
                 Poster picture: Photo by <a href="https://pixnio.com/pt/media/sinal-bem-vindo-colete-salva-vidas-texto-vintage" target="blank" rel="noopener noreferrer"> Bicanski</a> at <a href="https://pixnio.com/pt/"  target="blank" rel="noopener noreferrer">Pixnio</a>.
             </p>
-            
+
             <p>
                 Teacher Guanabara advices us to use Handbrake video transcoder app to make different versions of our video, but the app doesn't run in my 8.1 Windows. So I'll pretend I have an OGV video just to give you an example of how the code gets.
             </p>
 
+<h2>
+    2) Embedding Video on Your Website.
+</h2>
 
+            <p>
+                The basic HTML structure for embedding videos is:
+            </p>
 
+            <p>
+                <code>&lt;iframe src=”URL’>&lt;/iframe&gt;</code>
+            </p>
 
+            <p>
+                This snippet of code helps display the video on your website. It pulls the video from its original source, without actually “forcing” you to host it on your website.  This implies that you won't have to worry that a video will affect your website load time, and it also opens up an array of choices between various video hosting services that best suit your needs.
+            </p>
 
+            <p>
+                In a few words, it improves your SEO rating. And if you embed a video from your own YouTube channel it HIGHLY improves your SEO rating, as Guanabara says in the video below.
+            </p>
 
+            <p>
+                One simple way of embedding a video is from YouTube: 
+            </p>
+
+            <ol>
+                <li>Go to YouTube.</li>
+                <li>Navigate to the video you wish to embed.</li>
+                <li>Click the <strong>Share</strong> link below the video, then click the <strong>Embed</strong> link.</li>
+                <li>Click the <strong>Copy</strong> option and the embed link will be highlighted in blue.</li>
+                <li>Paste it to your code.</li>
+            </ol>
+
+            <p>
+                Here's a video embeded this way:
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>
+                
+            </p>
+            
 
 
 
