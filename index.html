@@ -1134,18 +1134,26 @@
 
             <p>Example</p>
 
-            <img src="images/video-code.png" width="50%" alt="video code">
+            <img src="images/video-code.png" width="60%" alt="video code">
 
             <p>
                 The <code>controls</code> attribute adds video controls, like play, pause, and volume.
             </p>
 
             <p>
-                "It is a good idea to always include <code>width</code> and <code>height</code> attributes. If height and width are not set, the page might flicker while the video loads". (w3schools)
+                The <code>poster</code> attribute shows a cover for the video before the first frame.
             </p>
 
             <p>
-                Anyway, I have set here ONLY  the width (at 30%) to avoid disturbing the original  width x height proportion. The snippet image above is just an example copied from w3schools and placed in my code for some minutes. And I have no "ogg" video file either.
+                The <code>&lt;div class="entity"&gt;</code> puts the video inside a purple box. It's a CSS style I've used some times in this page.
+            </p>
+
+            <p>
+                "It is a good idea to always include <code>width</code> and (I would say OR) <code>height</code> attributes. If height and width are not set, the page might flicker while the video loads". (w3schools)
+            </p>
+
+            <p>
+                Anyway, <mark>I have set here ONLY  the <code>width</code> (at 30%) to avoid disturbing the original  width x height proportion</mark>. The snippet image above is just an example copied from w3schools and placed in my code for some minutes. And I have no "ogg" video file either.
             </p>
 
             <p>
@@ -1159,16 +1167,22 @@
             <p>To start a video automatically when the page is loaded, use the <code>autoplay</code> attribute after the <code>width</code> and <code>height</code> parameters, instead of "<del><code>controls</code></del>".</p>
 
             <div class="entity">
-                <video width="40%" controls>
+                <video width="40%" poster="images/salvavidas.jpg" controls>
                     <source src="midia/video/pexels-rulo-davila-5380467.mp4" type="video/mp4">
                     <source src="midia/video/pexels-rulo-davila-5380467.ogv" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p>Video from:<cite>"https://www.pexels.com/pt-br/video/asfalto-barco-bote-canal-5380467/" Author: Rulo Davila, at Pexels</cite></p>
+
+            <p>Video from:<cite>"https://www.pexels.com/pt-br/video/asfalto-barco-bote-canal-5380467/" Author: Rulo Davila, at Pexels</cite>
+            </p>
+
+            <p>
+                Poster picture: Photo by <a href="https://pixnio.com/pt/media/sinal-bem-vindo-colete-salva-vidas-texto-vintage" target="blank" rel="noopener noreferrer"> Bicanski</a> at <a href="https://pixnio.com/pt/"  target="blank" rel="noopener noreferrer">Pixnio</a>.
+            </p>
             
             <p>
-                Teacher Guanabara advices us to use Handbrake video transcoder app to make different versions of our video, but the app doesn't run in my 8.1 Windows. So...
+                Teacher Guanabara advices us to use Handbrake video transcoder app to make different versions of our video, but the app doesn't run in my 8.1 Windows. So I'll pretend I have an OGV video just to give you an example of how the code gets.
             </p>
 
 
