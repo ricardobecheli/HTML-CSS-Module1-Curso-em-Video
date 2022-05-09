@@ -52,7 +52,7 @@ main p {
 }
 
 main p::first-letter {
-    color: red;
+    color: rgb(168, 2, 2);
     font-size: 120%;
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
@@ -84,7 +84,7 @@ li {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: rgba(217, 174, 248, 0.521);
-    color: rgb(185, 3, 103);
+    color: rgb(136, 2, 76);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
@@ -121,6 +121,36 @@ li {
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+.lauda {
+    background-color: rgba(172, 255, 227, 0.226);
+    color: red;
+    padding-top: 15px;
+    margin-top: 6em;
+    margin-bottom: 3em
+
+
+
+}
+
+.lauda > h2 {
+    margin: 0%;
+    padding-left: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.lauda > p {
+    margin: 0%;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: justify;
+    color: darkred;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .canyon {
