@@ -7,37 +7,39 @@
     <link rel="shortcut icon" href="images/favicon-html-css.png" type="image/x-icon">
     <title>HTML+CSS M1</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
 
+        /*I'll leave this CSS here as a witness of the early lessons*/
+
         .blue {
-            height: 350px;
-            background-color: cornflowerblue;
-            padding: 45px;
-            margin-left: 0px;
-            margin-right: 0px;
-            float: inline-start;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: space-between;
+            background-color: rgb(47, 87, 160);
+            padding: 10px;
+
         }
+
 
         .balls-hand {
             background-color: cornflowerblue;
-            width: auto;
-        }
-
-        .balls-hand {
-            margin: 35px;
-            
+            margin: auto;
             float: left;
-            width: 230px;
+            width: 25%;
+            padding: 0px;
         }
 
-        .balls-hand:hover {
-        border: 1px solid #777;
-}
-
-        .balls-hand img {
-         width: 100%;
-        height: auto;
+        .balls-hand > img {
+            margin: 0px;
+            padding: 0px;
+            vertical-align: bottom;
+            width: 100%;
+            height: auto;   
         }
+
 
         #para1 {
             color:rgb(184, 67, 0);
@@ -49,7 +51,7 @@
 
 <body>
 
-    <header>
+    <header id="top">
 
         <h1 style="font-family: 'Times New Roman', Times, serif;">
             <em>Hello, world! This is phase 1*</em>
@@ -69,6 +71,28 @@
 
     </header>
 
+    <div class="sidenav">
+
+        <a href="#top">Top</a>
+        <a href="#timetable">My Timetable</a>
+        <a href="#css-remarks">CSS Remarks</a>
+        <a href="#html-declaration">HTML Declaration</a>
+        <a href="#title">Title</a>
+        <a href="#semantics">Semantics</a>
+        <a href="#hr">hr tag</a>
+        <a href="#br">br tag</a>
+        <a href="#del">del tag</a>
+        <a href="#backtoins">ins tag</a>
+        <a href="#small">small tag</a>
+        <a href="#sup">sup tag</a>
+        <a href="#sub">sub tag</a>
+        <a href="#above">Entities</a>
+        <a href="#emojis">Emojis</a>
+        <a href="#XYZ">abc</a>
+        <a href="#XYZ">abc</a>
+
+    </div>
+
 <main>
 
             <aside class="process">
@@ -79,7 +103,7 @@
     
             <hr style="margin:auto">
     
-            <h3>The plan is to show you my progress in 3 phases:</h3>
+            <h3 id="timetable">The plan is to show you my progress in 3 phases:</h3>
     
             <ol style="margin-bottom: 30px;">
                 <li style="margin-bottom: 10px;"><strong>PHASE 1*</strong> - Is this you're reading: Only one long page focused in HTML5 / Aware of imperfect testings of CSS / No JavaScript. <span style="color: green; font-weight: bold;">DONE</span> = THIS PAGE. </li>
@@ -95,7 +119,7 @@
     
     <div class="comment">
     
-    <h1>Important CSS remarks:</h1>
+    <h1 id="css-remarks">Important CSS remarks:</h1>
     
             <p>
                 This course is beginning with <strong>HTML5</strong> but I decided that a little CSS is needed from the beginning so I can start practicing. I know that my self-taught CSS is far from being ok, though.
@@ -162,7 +186,7 @@
     <hr>
     
     
-    <h1>HTML <code>&lt;!DOCTYPE html&gt;</code> Declaration</h1>
+    <h1 id="html-declaration">HTML <code>&lt;!DOCTYPE html&gt;</code> Declaration</h1>
     
                 <p>All HTML5 documents <mark>must</mark> start with a <code>&lt;!DOCTYPE html&gt;</code> declaration.</p>
                 <p>The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</p>
@@ -219,7 +243,7 @@
     
                 </figure>
     
-    <h1>Title</h1>
+    <h1 id="title">Title</h1>
     
             <p>The <code>&lt;title&gt;</code> tag inside the <code>&lt;head&gt;</code> area is the name your page or website will display in the TAB top.</p>
             <p>An example from seo-gold.com:</p>
@@ -229,7 +253,7 @@
                 <figcaption><em>Credit:Image from seo-gold.com</em></figcaption>
                 </figure>
     
-    <h1>HTML Semantic Elements</h1>
+    <h1 id="semantics">HTML Semantic Elements</h1>
     
             <p>Semantic elements = elements with a meaning. <mark>HTML5 was built to be semantic, to attribute meaning to its content</mark>.</p>
     
@@ -253,17 +277,17 @@
     
             <p>Learn more at <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="blank" rel="noopener noreferrer">w3schools</a>.</p>
     
-    <h1><em>hr</em> tag</h1>
+    <h1 id="hr"><em>hr</em> tag</h1>
     
             <p>The <code> &lt;hr&gt;</code>* tag (hr stands for "horizontal rule". It makes an HORIZONTAL LINE). The the <span style="color: red;">red line</span> above here. It's originally black but I applied some <span style="color: blue;">style (=CSS)</span>  to it in the <span style="color: blue;">head</span> area of the HTML basic structure (but here, in this paragraph, the colors/style were modified in the middle of the paragraph (the so called "<span style="color: blue;">inline CSS</span>" explained above.), using <code>&lt;span&gt;</code> 3 times).</p>
     
     
     
     
-    <h1><em>br</em>  tag</h1>
+    <h1 id="br"><em>br</em>  tag</h1>
             <p> The br tag breaks a line like now <br> (for whatever reason you may have), without being a paragraph. (after the word "now" there is a <code>&lt;br&gt;</code> tag)</p>
     
-    <h1><em>del</em> tag</h1>
+    <h1 id="del"><em>del</em> tag</h1>
     
             <p>The <code>&lt;del&gt;</code> tag <del>marks a text as non-valid</del> or deleted.</p>
     
@@ -271,13 +295,13 @@
             <p>The <code>&lt;ins&gt;</code> tag underlines the text to give the kind of enphasis s if he text has been <ins>filled in the blank space, or inserted</ins>.</p>
             <p><mark>Don't confuse this tag with the "u" one</mark>. "U" is not semantic. It just <u>underlines</u> and that's it, no meanings whatsoever.</p>
     
-    <h1><em>small</em> tag</h1>
+    <h1 id="small"><em>small</em> tag</h1>
             <p>This tag can be used in those small <small>contract/agreement/purchase order/invoice</small> letters.</p>
             <p>The <big>"big"</big> tag is not used any longer. It works, thou. This task (enlarging) now is CSS business.</p>
-    <h1><em>sup</em> tag</h1>
+    <h1 id="sup"><em>sup</em> tag</h1>
             <p>The superscript tag is good to format things like 18<sup>25</sup>+3, for instance.</p>
     
-    <h1><em>sub</em> tag</h1>
+    <h1 id="sub"><em>sub</em> tag</h1>
             <p>The subscript tag doesn't make it rain but can make the H<sub>2</sub>O formula.</p>
     
     <h1><a id="above">Entities</a></h1>
@@ -350,7 +374,7 @@
                     <hr style="margin-bottom: 100px;">
                 </aside>
     
-    <h1>Emojis:</h1>
+    <h1 id="emojis">Emojis:</h1>
             <p>Emojis codes are a little more complicated to insert.</p>
             <p>First go to a website like the one linked below and:</p>
             <ol>
@@ -417,29 +441,26 @@
     
     
             <div class="pic">
-            <img src="images/landscape.jpg" width="100%" alt="swimming pool near the ocean landdscape">
+            <img src="images/landscape.jpg" alt="swimming pool near the ocean landdscape">
             </div>
         <hr>
     
+        <p style="font-size:x-large; text-align: justify;">PNG images are better if you want the picture itself to have a transparent background (and no picture frame), like these ones:</p>
+
         <div class="blue">
-    
-            <p style="font-size:x-large; text-align: justify;">PNG images are better if you want the picture itself to have a transparent background (and no picture frame), like these ones:</p>
-    
-    
+
                 <div class="balls-hand">
-                    <img src="images/baloon.png" alt="baloons" width="auto">
+                    <img src="images/baloon.png" alt="baloons"  >
                 </div>
     
                 <div class="balls-hand">
-                    <img src="images/hand.png" alt="hand" width="auto" >
+                    <img src="images/hand.png" alt="hand"  >
                 </div>
     
                 <div class="balls-hand">
-                    <img src="images/spiderman.png" alt="baloons" width="auto">
+                    <img src="images/spiderman.png" alt="spiderman" >
                 </div>
-    
-    
-    
+
     
         </div>
             <p style="text-align: justify;">I've implemented a blue background (in a "div" "class" called "balls-hand" inside another div class called "blue" in the head sector of this HTML document) to make it easier to check the image's transparency and to align them. <br>Images from <a href="https://www.pngwing.com/en/search?q=free+download" target="blank" rel="noopener noreferrer">pngwing.com</a> .</p>
